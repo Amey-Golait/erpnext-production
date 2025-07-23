@@ -1,0 +1,3 @@
+2025-07-18 15:21:43,142 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'name': 'student-dashboard', 'cmd': 'frappe.desk.desk_page.getpage'}

@@ -1,0 +1,761 @@
+2025-07-04 15:27:42,367 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'cmd': 'frappe.desk.form.load.getdoc'}
+2025-07-04 16:09:47,865 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'name': 'doctor-prescription', 'cmd': 'frappe.desk.desk_page.getpage'}
+2025-07-04 16:13:50,198 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'name': 'doctor-prescription', 'cmd': 'frappe.desk.desk_page.getpage'}
+2025-07-04 16:18:29,275 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'name': 'doctor-prescription', 'cmd': 'frappe.desk.desk_page.getpage'}
+2025-07-04 16:35:59,662 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'name': 'doctor-prescription', 'cmd': 'frappe.desk.desk_page.getpage'}
+2025-07-04 16:42:55,380 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'name': 'doctor-prescription', 'cmd': 'frappe.desk.desk_page.getpage'}
+2025-07-04 16:50:37,995 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'name': 'doctor-prescription', 'cmd': 'frappe.desk.desk_page.getpage'}
+2025-07-07 15:08:29,634 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doctype': 'Student', 'with_parent': '1', 'cached_timestamp': '2025-07-07 13:38:11.020745', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-07-07 15:13:10,857 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doctype': 'Student', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-07-07 15:15:12,517 ERROR frappe Error while inserting deferred Error Log record: Error Log psl7jrh3b3: 'Title' (Module import failed for Student, the DocType you're trying to open might be deleted.
+Error: No module named 'student_master.student_master.doctype.student.student') will get truncated, as max characters allowed is 140
+Site: erp.amey.local
+Form Dict: {}
+2025-07-07 15:15:12,525 ERROR frappe Error while inserting deferred Error Log record: Error Log pslk7accrj: 'Title' (Module import failed for Student, the DocType you're trying to open might be deleted.
+Error: No module named 'student_master.student_master.doctype.student.student') will get truncated, as max characters allowed is 140
+Site: erp.amey.local
+Form Dict: {}
+2025-07-10 12:12:38,207 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'docs': '{"name":"Doctor Time Slot","creation":"2025-07-10 11:25:53.389934","modified":"2025-07-10 11:55:52.178096","modified_by":"Administrator","owner":"Administrator","docstatus":0,"idx":0,"issingle":0,"is_virtual":0,"is_tree":0,"istable":1,"editable_grid":1,"track_changes":0,"module":"Clinic App","sort_field":"modified","sort_order":"DESC","read_only":0,"in_create":0,"allow_copy":0,"allow_rename":1,"allow_import":0,"hide_toolbar":0,"track_seen":0,"max_attachments":0,"engine":"InnoDB","is_submittable":0,"show_name_in_global_search":0,"custom":0,"beta":0,"has_web_view":0,"allow_guest_to_view":0,"email_append_to":0,"show_title_field_in_link":0,"migration_hash":"dfcefe4c05df6f16e2a54d39aefc9647","translated_doctype":0,"is_calendar_and_gantt":0,"quick_entry":0,"grid_page_length":50,"track_views":0,"queue_in_background":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"force_re_route_to_default_view":0,"show_preview_popup":0,"protect_attached_files":0,"index_web_pages_for_search":1,"row_format":"Dynamic","doctype":"DocType","fields":[{"name":"8b04s0d85q","creation":"2025-07-10 11:25:53.389934","modified":"2025-07-10 11:55:52.056817","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Doctor Time Slot","parentfield":"fields","parenttype":"DocType","idx":1,"fieldname":"section_break_4fvs","fieldtype":"Section Break","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"8b0f6u94ev","creation":"2025-07-10 11:25:53.389934","modified":"2025-07-10 11:55:52.056817","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Doctor Time Slot","parentfield":"fields","parenttype":"DocType","idx":2,"fieldname":"shift","label":"Shift","fieldtype":"Select","options":"Morning\\nNight","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"description":"Monday To Sunday","in_list_view":1,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"8b0butm4ls","creation":"2025-07-10 11:25:53.389934","modified":"2025-07-10 11:55:52.056817","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Doctor Time Slot","parentfield":"fields","parenttype":"DocType","idx":3,"fieldname":"start_time","label":"Start Time","fieldtype":"Time","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":1,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"8b0vg7bjlp","creation":"2025-07-10 11:25:53.389934","modified":"2025-07-10 11:55:52.056817","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Doctor Time Slot","parentfield":"fields","parenttype":"DocType","idx":4,"fieldname":"end_time","label":"End Time","fieldtype":"Time","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":1,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"}],"states":[],"links":[],"permissions":[],"actions":[],"__last_sync_on":"2025-07-10T06:42:37.579Z"}', 'method': 'check_pending_migration', 'cmd': 'run_doc_method'}
+2025-07-10 12:14:00,625 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'docs': '{"doctype":"DocType","name":"Doctor Time Slot","creation":"2025-07-10 11:25:53.389934","modified":"2025-07-10 11:55:52.178096","modified_by":"Administrator","owner":"Administrator","docstatus":0,"idx":0,"issingle":0,"is_virtual":0,"is_tree":0,"istable":1,"editable_grid":1,"track_changes":0,"module":"Clinic App","sort_field":"modified","sort_order":"DESC","read_only":0,"in_create":0,"allow_copy":0,"allow_rename":1,"allow_import":0,"hide_toolbar":0,"track_seen":0,"max_attachments":0,"engine":"InnoDB","is_submittable":0,"show_name_in_global_search":0,"custom":0,"beta":0,"has_web_view":0,"allow_guest_to_view":0,"email_append_to":0,"show_title_field_in_link":0,"migration_hash":"dfcefe4c05df6f16e2a54d39aefc9647","translated_doctype":0,"is_calendar_and_gantt":0,"quick_entry":0,"grid_page_length":50,"track_views":0,"queue_in_background":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"force_re_route_to_default_view":0,"show_preview_popup":0,"protect_attached_files":0,"index_web_pages_for_search":1,"row_format":"Dynamic","fields":[{"doctype":"DocField","name":"8b04s0d85q","creation":"2025-07-10 11:25:53.389934","modified":"2025-07-10 11:55:52.056817","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Doctor Time Slot","parentfield":"fields","parenttype":"DocType","idx":1,"fieldname":"section_break_4fvs","fieldtype":"Section Break","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0},{"doctype":"DocField","name":"8b0f6u94ev","creation":"2025-07-10 11:25:53.389934","modified":"2025-07-10 11:55:52.056817","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Doctor Time Slot","parentfield":"fields","parenttype":"DocType","idx":2,"fieldname":"shift","label":"Shift","fieldtype":"Select","options":"Morning\\nNight","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"description":"Monday To Sunday","in_list_view":1,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0},{"doctype":"DocField","name":"8b0butm4ls","creation":"2025-07-10 11:25:53.389934","modified":"2025-07-10 11:55:52.056817","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Doctor Time Slot","parentfield":"fields","parenttype":"DocType","idx":3,"fieldname":"start_time","label":"Start Time","fieldtype":"Time","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":1,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0},{"doctype":"DocField","name":"8b0vg7bjlp","creation":"2025-07-10 11:25:53.389934","modified":"2025-07-10 11:55:52.056817","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Doctor Time Slot","parentfield":"fields","parenttype":"DocType","idx":4,"fieldname":"end_time","label":"End Time","fieldtype":"Time","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":1,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0}],"permissions":[],"actions":[],"links":[],"states":[]}', 'method': 'check_pending_migration', 'cmd': 'run_doc_method'}
+2025-07-10 12:15:40,117 ERROR frappe Error while inserting deferred Error Log record: Error Log ju9e9nctbu: 'Title' ([Errno 2] No such file or directory: '/Users/amee/erpnext-bench/apps/clinic_app/clinic_app/clinic_app/doctype/doctor_time_slot/doctor_time_slot.json') will get truncated, as max characters allowed is 140
+Site: erp.amey.local
+Form Dict: {}
+2025-07-10 12:15:40,126 ERROR frappe Error while inserting deferred Error Log record: Error Log ju9lrdt1bn: 'Title' ([Errno 2] No such file or directory: '/Users/amee/erpnext-bench/apps/clinic_app/clinic_app/clinic_app/doctype/doctor_time_slot/doctor_time_slot.json') will get truncated, as max characters allowed is 140
+Site: erp.amey.local
+Form Dict: {}
+2025-07-10 12:42:58,642 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Clinic Appointment","name":"new-clinic-appointment-gfswbeeejn","__islocal":1,"__unsaved":1,"owner":"Administrator","status":"Scheduled","__run_link_triggers":1,"appointment_date":"2025-07-10","appointment_time":"14:00:00","doctor":"Dr. Vaishnavi Dahe","patient":"Amey Golait"}', 'cmd': 'frappe.client.save'}
+2025-07-10 12:44:41,343 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Clinic Appointment","name":"new-clinic-appointment-gfswbeeejn","__islocal":1,"__unsaved":1,"owner":"Administrator","status":"Scheduled","__run_link_triggers":false,"appointment_date":"2025-07-10","appointment_time":"14:00:00","doctor":"Dr. Vaishnavi Dahe","patient":"Amey Golait"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-07-10 12:47:33,324 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Clinic Appointment","name":"new-clinic-appointment-zryulqphca","__islocal":1,"__unsaved":1,"owner":"Administrator","status":"Scheduled","__run_link_triggers":1,"appointment_date":"2025-07-10","appointment_time":"12:47:23","doctor":"Dr. Vaishnavi Dahe","patient":"Amey Golait"}', 'cmd': 'frappe.client.save'}
+2025-07-10 12:57:02,021 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Clinic Appointment","name":"new-clinic-appointment-owjjcaimpe","__islocal":1,"__unsaved":1,"owner":"Administrator","status":"Scheduled","__run_link_triggers":false,"appointment_date":"2025-07-11","appointment_time":"15:00:00","doctor":"Dr. Vaishnavi Dahe","patient":"Amey Golait"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-07-10 12:57:32,793 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Clinic Appointment","name":"new-clinic-appointment-qxxckznecp","__islocal":1,"__unsaved":1,"owner":"Administrator","status":"Scheduled","__run_link_triggers":1,"appointment_date":"2025-07-10","appointment_time":"16:00:00","doctor":"Dr. Vaishnavi Dahe","patient":"Amey Golait"}', 'cmd': 'frappe.client.save'}
+2025-07-10 13:03:52,723 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Clinic Appointment","name":"new-clinic-appointment-bdnlssvklk","__islocal":1,"__unsaved":1,"owner":"Administrator","status":"Scheduled","__run_link_triggers":1,"appointment_date":"2025-07-10","appointment_time":"13:30:00","doctor":"Dr. Vaishnavi Dahe","patient":"Amey Golait"}', 'cmd': 'frappe.client.save'}
+2025-07-10 15:31:00,140 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Clinic Appointment","name":"new-clinic-appointment-bxdckncgib","__islocal":1,"__unsaved":1,"owner":"Administrator","status":"Scheduled","__run_link_triggers":1,"appointment_date":"2025-07-10","appointment_time":"17:30:42","doctor":"Dr. Vaishnavi Dahe","patient":"h5d7237qoo"}', 'cmd': 'frappe.client.save'}
+2025-07-10 16:09:53,149 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'prescription_name': 'svhe8721gf', 'cmd': 'clinic_app.api.send_prescription_sms', 'pdf_generator': 'wkhtmltopdf'}
+2025-07-10 16:09:53,149 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'prescription_name': 'svhe8721gf', 'cmd': 'clinic_app.api.send_prescription_sms', 'pdf_generator': 'wkhtmltopdf'}
+2025-07-10 16:15:37,828 ERROR frappe Error while inserting deferred Error Log record: Error Log 0hico87ldp: 'Title' (No wkhtmltopdf executable found: "b''"
+If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf) will get truncated, as max characters allowed is 140
+Site: erp.amey.local
+Form Dict: {}
+2025-07-10 16:15:37,836 ERROR frappe Error while inserting deferred Error Log record: Error Log 0hi7b82vgl: 'Title' (No wkhtmltopdf executable found: "b''"
+If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf) will get truncated, as max characters allowed is 140
+Site: erp.amey.local
+Form Dict: {}
+2025-07-15 16:29:41,274 ERROR frappe Could not take error snapshot: (2013, 'Lost connection to MySQL server during query')
+Site: erp.amey.local
+Form Dict: {}
+Traceback (most recent call last):
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/serve.py", line 19, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/path_resolver.py", line 38, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/path_resolver.py", line 118, in resolve_redirect
+    redirects += frappe.get_all(
+                 ^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/__init__.py", line 2046, in get_all
+    return get_list(doctype, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/__init__.py", line 2021, in get_list
+    return frappe.model.db_query.DatabaseQuery(doctype).execute(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/db_query.py", line 191, in execute
+    result = self.build_and_run()
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/db_query.py", line 232, in build_and_run
+    return frappe.db.sql(
+           ^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 108, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 117, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 668, in connect
+    self._get_server_information()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/app.py", line 124, in application
+    response = get_response()
+               ^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/serve.py", line 23, in get_response
+    return handle_exception(e, endpoint, path, http_status_code)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/permissions.py", line 883, in wrapper
+    return fn(e, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/serve.py", line 37, in handle_exception
+    return ErrorPage(exception=e).render()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 84, in render
+    html = self.get_html()
+           ^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/utils.py", line 534, in cache_html_decorator
+    html = func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 92, in get_html
+    self.init_context()
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 14, in init_context
+    super().init_context()
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/page_renderers/base_template_page.py", line 15, in init_context
+    self.context.update(get_website_settings())
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 263, in get_website_settings
+    context.boot = get_boot_data()
+                   ^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/utils.py", line 171, in get_boot_data
+    apps = get_apps() or []
+           ^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/utils/typing_validations.py", line 31, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/apps.py", line 20, in get_apps
+    allowed_workspaces = get_workspace_sidebar_items().get("pages")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/utils/typing_validations.py", line 31, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/desk/desktop.py", line 451, in get_workspace_sidebar_items
+    all_pages = frappe.get_all(
+                ^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/__init__.py", line 2046, in get_all
+    return get_list(doctype, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/__init__.py", line 2021, in get_list
+    return frappe.model.db_query.DatabaseQuery(doctype).execute(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/db_query.py", line 191, in execute
+    result = self.build_and_run()
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/db_query.py", line 232, in build_and_run
+    return frappe.db.sql(
+           ^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 108, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 117, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 668, in connect
+    self._get_server_information()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/utils/error.py", line 86, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/utils/error.py", line 61, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/__init__.py", line 1308, in get_doc
+    return frappe.model.document.get_doc(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/document.py", line 83, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/base_document.py", line 82, in import_controller
+    doctype_info = frappe.db.get_value("DocType", doctype, ("module", "custom", "is_tree"), as_dict=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 515, in get_value
+    result = self.get_values(
+             ^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 619, in get_values
+    out = self._get_values_from_table(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 892, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 108, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 117, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 668, in connect
+    self._get_server_information()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 1098, in _get_server_information
+    packet = self._read_packet()
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+2025-07-15 16:32:57,844 ERROR frappe Could not take error snapshot: (1045, "Access denied for user '_06a502cd4c3d610c'@'localhost' (using password: YES)")
+Site: erp.amey.local
+Form Dict: {}
+Traceback (most recent call last):
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/serve.py", line 19, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/path_resolver.py", line 38, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/path_resolver.py", line 118, in resolve_redirect
+    redirects += frappe.get_all(
+                 ^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/__init__.py", line 2046, in get_all
+    return get_list(doctype, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/__init__.py", line 2021, in get_list
+    return frappe.model.db_query.DatabaseQuery(doctype).execute(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/db_query.py", line 191, in execute
+    result = self.build_and_run()
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/db_query.py", line 232, in build_and_run
+    return frappe.db.sql(
+           ^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 108, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 117, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_06a502cd4c3d610c'@'localhost' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/app.py", line 124, in application
+    response = get_response()
+               ^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/serve.py", line 23, in get_response
+    return handle_exception(e, endpoint, path, http_status_code)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/permissions.py", line 883, in wrapper
+    return fn(e, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/serve.py", line 37, in handle_exception
+    return ErrorPage(exception=e).render()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 84, in render
+    html = self.get_html()
+           ^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/utils.py", line 534, in cache_html_decorator
+    html = func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 92, in get_html
+    self.init_context()
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 14, in init_context
+    super().init_context()
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/page_renderers/base_template_page.py", line 15, in init_context
+    self.context.update(get_website_settings())
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 263, in get_website_settings
+    context.boot = get_boot_data()
+                   ^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/utils.py", line 171, in get_boot_data
+    apps = get_apps() or []
+           ^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/utils/typing_validations.py", line 31, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/apps.py", line 20, in get_apps
+    allowed_workspaces = get_workspace_sidebar_items().get("pages")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/utils/typing_validations.py", line 31, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/desk/desktop.py", line 451, in get_workspace_sidebar_items
+    all_pages = frappe.get_all(
+                ^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/__init__.py", line 2046, in get_all
+    return get_list(doctype, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/__init__.py", line 2021, in get_list
+    return frappe.model.db_query.DatabaseQuery(doctype).execute(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/db_query.py", line 191, in execute
+    result = self.build_and_run()
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/db_query.py", line 232, in build_and_run
+    return frappe.db.sql(
+           ^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 108, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 117, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_06a502cd4c3d610c'@'localhost' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/utils/error.py", line 86, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/utils/error.py", line 61, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/__init__.py", line 1308, in get_doc
+    return frappe.model.document.get_doc(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/document.py", line 83, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/base_document.py", line 82, in import_controller
+    doctype_info = frappe.db.get_value("DocType", doctype, ("module", "custom", "is_tree"), as_dict=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 515, in get_value
+    result = self.get_values(
+             ^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 619, in get_values
+    out = self._get_values_from_table(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 892, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 108, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 117, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_06a502cd4c3d610c'@'localhost' (using password: YES)")
+2025-07-15 16:33:00,222 ERROR frappe Could not take error snapshot: (1045, "Access denied for user '_06a502cd4c3d610c'@'localhost' (using password: YES)")
+Site: erp.amey.local
+Form Dict: {}
+Traceback (most recent call last):
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/serve.py", line 19, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/path_resolver.py", line 38, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/path_resolver.py", line 118, in resolve_redirect
+    redirects += frappe.get_all(
+                 ^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/__init__.py", line 2046, in get_all
+    return get_list(doctype, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/__init__.py", line 2021, in get_list
+    return frappe.model.db_query.DatabaseQuery(doctype).execute(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/db_query.py", line 191, in execute
+    result = self.build_and_run()
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/db_query.py", line 232, in build_and_run
+    return frappe.db.sql(
+           ^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 108, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 117, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_06a502cd4c3d610c'@'localhost' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/app.py", line 124, in application
+    response = get_response()
+               ^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/serve.py", line 23, in get_response
+    return handle_exception(e, endpoint, path, http_status_code)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/permissions.py", line 883, in wrapper
+    return fn(e, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/serve.py", line 37, in handle_exception
+    return ErrorPage(exception=e).render()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 84, in render
+    html = self.get_html()
+           ^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/utils.py", line 534, in cache_html_decorator
+    html = func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 92, in get_html
+    self.init_context()
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 14, in init_context
+    super().init_context()
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/page_renderers/base_template_page.py", line 15, in init_context
+    self.context.update(get_website_settings())
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 263, in get_website_settings
+    context.boot = get_boot_data()
+                   ^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/website/utils.py", line 171, in get_boot_data
+    apps = get_apps() or []
+           ^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/utils/typing_validations.py", line 31, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/apps.py", line 20, in get_apps
+    allowed_workspaces = get_workspace_sidebar_items().get("pages")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/utils/typing_validations.py", line 31, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/desk/desktop.py", line 451, in get_workspace_sidebar_items
+    all_pages = frappe.get_all(
+                ^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/__init__.py", line 2046, in get_all
+    return get_list(doctype, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/__init__.py", line 2021, in get_list
+    return frappe.model.db_query.DatabaseQuery(doctype).execute(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/db_query.py", line 191, in execute
+    result = self.build_and_run()
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/db_query.py", line 232, in build_and_run
+    return frappe.db.sql(
+           ^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 108, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 117, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_06a502cd4c3d610c'@'localhost' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/utils/error.py", line 86, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/utils/error.py", line 61, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/__init__.py", line 1308, in get_doc
+    return frappe.model.document.get_doc(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/document.py", line 83, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/model/base_document.py", line 82, in import_controller
+    doctype_info = frappe.db.get_value("DocType", doctype, ("module", "custom", "is_tree"), as_dict=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 515, in get_value
+    result = self.get_values(
+             ^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 619, in get_values
+    out = self._get_values_from_table(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 892, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 108, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/apps/frappe/frappe/database/mariadb/database.py", line 117, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/amee/erpnext-bench/env/lib/python3.11/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_06a502cd4c3d610c'@'localhost' (using password: YES)")
+2025-07-15 16:36:33,913 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Class Enrollment","name":"new-class-enrollment-ezrqpcfilc","__islocal":1,"__unsaved":1,"owner":"Administrator","status":"Active","student":"160053","class":"10th-A","academic_year":"2025-26","enrollment_date":"2025-07-15"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-07-15 16:37:18,633 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Class Enrollment","name":"new-class-enrollment-ezrqpcfilc","__islocal":1,"__unsaved":1,"owner":"Administrator","status":"Active","student":"160053","class":"10th-A","academic_year":"2025-26","enrollment_date":"2025-07-15"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-07-15 18:09:47,700 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Student Attendance","name":"new-student-attendance-cfmtysankj","__islocal":1,"__unsaved":1,"owner":"Administrator","status":"Present","__run_link_triggers":1,"student":"160051","date":"2025-07-15","class":"1st-A"}', 'cmd': 'frappe.client.save'}
+2025-07-15 18:17:19,586 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doctype': 'Student Attendance', 'with_parent': '1', 'cached_timestamp': '2025-07-15 18:08:54.889935', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-07-15 18:38:15,882 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doctype': 'Student Attendance', 'start': '2025-06-29 00:00:00', 'end': '2025-08-10 00:00:00', 'filters': '[]', 'field_map': '{"id":"name","start":"start","end":"end","allDay":"all_day","convertToUserTz":"convert_to_user_tz"}', 'cmd': 'frappe.desk.calendar.get_events'}
+2025-07-15 18:41:24,217 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doctype': 'Student Attendance', 'start': '2025-06-29 00:00:00', 'end': '2025-08-10 00:00:00', 'filters': '[]', 'field_map': '{"id":"name","start":"start","end":"end","allDay":"all_day","convertToUserTz":"convert_to_user_tz"}', 'cmd': 'frappe.desk.calendar.get_events'}
+2025-07-15 18:42:48,410 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doctype': 'Student Attendance', 'start': '2025-06-29 00:00:00', 'end': '2025-08-10 00:00:00', 'filters': '[]', 'field_map': '{"id":"name","start":"start","end":"end","allDay":"all_day","convertToUserTz":"convert_to_user_tz"}', 'cmd': 'frappe.desk.calendar.get_events'}
+2025-07-15 18:43:15,201 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doctype': 'Student Attendance', 'start': '2025-06-29 00:00:00', 'end': '2025-08-10 00:00:00', 'filters': '[]', 'field_map': '{"id":"name","start":"start","end":"end","allDay":"all_day","convertToUserTz":"convert_to_user_tz"}', 'cmd': 'frappe.desk.calendar.get_events'}
+2025-07-15 18:48:19,062 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doctype': 'Student Attendance', 'start': '2025-06-29 00:00:00', 'end': '2025-08-10 00:00:00', 'filters': '[]', 'field_map': '{"id":"name","start":"start","end":"end","allDay":"all_day","convertToUserTz":"convert_to_user_tz"}', 'cmd': 'frappe.desk.calendar.get_events'}
+2025-07-15 18:49:22,266 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doctype': 'Student Attendance', 'start': '2025-06-29 00:00:00', 'end': '2025-08-10 00:00:00', 'filters': '[]', 'field_map': '{"id":"name","start":"start","end":"end","allDay":"all_day","convertToUserTz":"convert_to_user_tz"}', 'cmd': 'frappe.desk.calendar.get_events'}
+2025-07-16 12:12:29,822 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Class Enrollment","name":"new-class-enrollment-rnpsrlsmsu","__islocal":1,"__unsaved":1,"owner":"Administrator","status":"Left","__run_link_triggers":1,"student":"140000","class":"53spjlc3qk","enrollment_date":"2023-04-10"}', 'cmd': 'frappe.client.save'}
+2025-07-16 12:42:59,257 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'data_import': 'Student Import on 2025-07-07 15:31:50.729241', 'import_file': '/private/files/Current_Student_Details(3)-2.csv', 'cmd': 'frappe.core.doctype.data_import.data_import.get_preview_from_template'}
+2025-07-16 13:41:39,843 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'class_link': '5m99fk1nj7', 'academic_year': '2025-2026', 'cmd': 'student_master.student_master.doctype.class_attendance.class_attendance.get_students_from_class'}
+2025-07-16 13:44:09,824 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'class_link': '5m99fk1nj7', 'academic_year': '2025-2026', 'cmd': 'student_master.student_master.doctype.class_attendance.class_attendance.get_students_from_class'}
+2025-07-16 15:46:14,034 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doc': '{"name":"Class Attendance","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:44:27.176823","modified_by":"Administrator","owner":"Administrator","docstatus":0,"idx":0,"issingle":0,"is_virtual":0,"is_tree":0,"istable":0,"editable_grid":0,"track_changes":0,"module":"student_master","sort_field":"modified","sort_order":"DESC","read_only":0,"in_create":0,"allow_copy":0,"allow_rename":1,"allow_import":0,"hide_toolbar":0,"track_seen":0,"max_attachments":0,"engine":"InnoDB","is_submittable":0,"show_name_in_global_search":0,"custom":0,"beta":0,"has_web_view":0,"allow_guest_to_view":0,"email_append_to":0,"show_title_field_in_link":0,"migration_hash":"1b9266ec651a19a4f6f289ae49bcfdd1","translated_doctype":0,"is_calendar_and_gantt":0,"quick_entry":0,"grid_page_length":50,"track_views":0,"queue_in_background":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"force_re_route_to_default_view":0,"show_preview_popup":0,"protect_attached_files":0,"index_web_pages_for_search":1,"row_format":"Dynamic","doctype":"DocType","states":[],"permissions":[{"name":"6gvblo82us","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:44:27.176823","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"permissions","parenttype":"DocType","idx":1,"permlevel":0,"role":"System Manager","read":1,"write":1,"create":1,"submit":0,"cancel":0,"delete":1,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"if_owner":0,"select":0,"doctype":"DocPerm"}],"links":[],"fields":[{"name":"6gvukjgdn8","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:44:27.176823","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":1,"fieldname":"section_break_axsh","fieldtype":"Section Break","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"6gv1rn42l0","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:44:27.176823","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":2,"fieldname":"class_link","label":"Class","fieldtype":"Link","options":"Class","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":1,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField","link_filters":""},{"name":"6gvv9aa2vt","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:44:27.176823","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":3,"fieldname":"academic_year","label":"Academic Year","fieldtype":"Link","options":"Academic Year","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"6gvu0bm3iq","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:44:27.176823","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":4,"fieldname":"date","label":"Date","fieldtype":"Date","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":1,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"6gv20aee45","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:44:27.176823","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":5,"fieldname":"students","label":"Students","fieldtype":"Table","options":"Class Attendance Student","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"}],"actions":[],"timeline_field":"","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-07-16 15:46:32,735 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doc': '{"name":"Class Attendance","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:44:27.176823","modified_by":"Administrator","owner":"Administrator","docstatus":0,"idx":0,"issingle":0,"is_virtual":0,"is_tree":0,"istable":0,"editable_grid":0,"track_changes":0,"module":"student_master","sort_field":"modified","sort_order":"DESC","read_only":0,"in_create":0,"allow_copy":0,"allow_rename":1,"allow_import":0,"hide_toolbar":0,"track_seen":0,"max_attachments":0,"engine":"InnoDB","is_submittable":0,"show_name_in_global_search":0,"custom":0,"beta":0,"has_web_view":0,"allow_guest_to_view":0,"email_append_to":0,"show_title_field_in_link":0,"migration_hash":"1b9266ec651a19a4f6f289ae49bcfdd1","translated_doctype":0,"is_calendar_and_gantt":0,"quick_entry":0,"grid_page_length":50,"track_views":0,"queue_in_background":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"force_re_route_to_default_view":0,"show_preview_popup":0,"protect_attached_files":0,"index_web_pages_for_search":1,"row_format":"Dynamic","doctype":"DocType","states":[],"permissions":[{"name":"6gvblo82us","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:44:27.176823","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"permissions","parenttype":"DocType","idx":1,"permlevel":0,"role":"System Manager","read":1,"write":1,"create":1,"submit":0,"cancel":0,"delete":1,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"if_owner":0,"select":0,"doctype":"DocPerm"}],"links":[],"fields":[{"name":"6gvukjgdn8","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:44:27.176823","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":1,"fieldname":"section_break_axsh","fieldtype":"Section Break","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"6gv1rn42l0","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:44:27.176823","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":2,"fieldname":"class_link","label":"Class","fieldtype":"Link","options":"Class","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":1,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField","link_filters":""},{"name":"6gvv9aa2vt","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:44:27.176823","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":3,"fieldname":"academic_year","label":"Academic Year","fieldtype":"Link","options":"Academic Year","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"6gvu0bm3iq","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:44:27.176823","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":4,"fieldname":"date","label":"Date","fieldtype":"Date","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":1,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"6gv20aee45","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:44:27.176823","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":5,"fieldname":"students","label":"Students","fieldtype":"Table","options":"Class Attendance Student","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"}],"actions":[],"timeline_field":"","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-07-16 15:57:30,818 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doc': '{"name":"Class Attendance","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:57:09.108521","modified_by":"Administrator","owner":"Administrator","docstatus":0,"idx":0,"issingle":0,"is_virtual":0,"is_tree":0,"istable":0,"editable_grid":0,"track_changes":0,"module":"student_master","sort_field":"modified","sort_order":"DESC","read_only":0,"in_create":0,"allow_copy":0,"allow_rename":1,"allow_import":0,"hide_toolbar":0,"track_seen":0,"max_attachments":0,"engine":"InnoDB","is_submittable":0,"show_name_in_global_search":0,"custom":0,"beta":0,"has_web_view":0,"allow_guest_to_view":0,"email_append_to":0,"show_title_field_in_link":0,"migration_hash":"936c3483748e4d1a218bf34332a9696a","translated_doctype":0,"is_calendar_and_gantt":0,"quick_entry":0,"grid_page_length":50,"track_views":0,"queue_in_background":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"force_re_route_to_default_view":0,"show_preview_popup":0,"protect_attached_files":0,"index_web_pages_for_search":1,"row_format":"Dynamic","doctype":"DocType","states":[],"permissions":[{"name":"nr7mn4d22d","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:57:09.108521","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"permissions","parenttype":"DocType","idx":1,"permlevel":0,"role":"System Manager","read":1,"write":1,"create":1,"submit":0,"cancel":0,"delete":1,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"if_owner":0,"select":0,"doctype":"DocPerm"}],"links":[],"fields":[{"name":"nr7va869oq","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:57:09.108521","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":1,"fieldname":"section_break_axsh","fieldtype":"Section Break","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"nr7ra607f1","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:57:09.108521","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":2,"fieldname":"class_link","label":"Class","fieldtype":"Link","options":"Class","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":1,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"link_filters":"","show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"nr75vvjpam","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:57:09.108521","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":3,"fieldname":"academic_year","label":"Academic Year","fieldtype":"Link","options":"Academic Year","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"nr7b9b2jjg","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:57:09.108521","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":4,"fieldname":"date","label":"Date","fieldtype":"Date","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":1,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"nr74ad11ui","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:57:09.108521","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":5,"fieldname":"students","label":"Students","fieldtype":"Table","options":"Class Attendance Student","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"}],"actions":[],"__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-07-16 15:57:54,705 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doc': '{"name":"Class Attendance","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:57:09.108521","modified_by":"Administrator","owner":"Administrator","docstatus":0,"idx":0,"issingle":0,"is_virtual":0,"is_tree":0,"istable":0,"editable_grid":0,"track_changes":0,"module":"student_master","sort_field":"modified","sort_order":"DESC","read_only":0,"in_create":0,"allow_copy":0,"allow_rename":1,"allow_import":0,"hide_toolbar":0,"track_seen":0,"max_attachments":0,"engine":"InnoDB","is_submittable":0,"show_name_in_global_search":0,"custom":0,"beta":0,"has_web_view":0,"allow_guest_to_view":0,"email_append_to":0,"show_title_field_in_link":0,"migration_hash":"936c3483748e4d1a218bf34332a9696a","translated_doctype":0,"is_calendar_and_gantt":0,"quick_entry":0,"grid_page_length":50,"track_views":0,"queue_in_background":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"force_re_route_to_default_view":0,"show_preview_popup":0,"protect_attached_files":0,"index_web_pages_for_search":1,"row_format":"Dynamic","doctype":"DocType","states":[],"permissions":[{"name":"nr7mn4d22d","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:57:09.108521","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"permissions","parenttype":"DocType","idx":1,"permlevel":0,"role":"System Manager","read":1,"write":1,"create":1,"submit":0,"cancel":0,"delete":1,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"if_owner":0,"select":0,"doctype":"DocPerm"}],"links":[],"fields":[{"name":"nr7va869oq","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:57:09.108521","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":1,"fieldname":"section_break_axsh","fieldtype":"Section Break","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"nr7ra607f1","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:57:09.108521","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":2,"fieldname":"class_link","label":"Class","fieldtype":"Link","options":"Class","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":1,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"link_filters":"","show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"nr75vvjpam","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:57:09.108521","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":3,"fieldname":"academic_year","label":"Academic Year","fieldtype":"Link","options":"Academic Year","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"nr7b9b2jjg","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:57:09.108521","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":4,"fieldname":"date","label":"Date","fieldtype":"Date","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":1,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"nr74ad11ui","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 15:57:09.108521","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":5,"fieldname":"students","label":"Students","fieldtype":"Table","options":"Class Attendance Student","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"}],"actions":[],"__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-07-16 16:07:40,924 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doc': '{"name":"Class Attendance","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 16:03:53.378937","modified_by":"Administrator","owner":"Administrator","docstatus":0,"idx":0,"issingle":0,"is_virtual":0,"is_tree":0,"istable":0,"editable_grid":0,"track_changes":0,"module":"student_master","sort_field":"modified","sort_order":"DESC","read_only":0,"in_create":0,"allow_copy":0,"allow_rename":1,"allow_import":0,"hide_toolbar":0,"track_seen":0,"max_attachments":0,"engine":"InnoDB","is_submittable":0,"show_name_in_global_search":0,"custom":0,"beta":0,"has_web_view":0,"allow_guest_to_view":0,"email_append_to":0,"show_title_field_in_link":0,"migration_hash":"2f09a2f2cc13339cc94247148f0c0749","translated_doctype":0,"is_calendar_and_gantt":0,"quick_entry":0,"grid_page_length":50,"track_views":0,"queue_in_background":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"force_re_route_to_default_view":0,"show_preview_popup":0,"protect_attached_files":0,"index_web_pages_for_search":1,"row_format":"Dynamic","doctype":"DocType","states":[],"permissions":[{"name":"05cj4h8ouk","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 16:03:53.246756","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"permissions","parenttype":"DocType","idx":1,"permlevel":0,"role":"System Manager","read":1,"write":1,"create":1,"submit":0,"cancel":0,"delete":1,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"if_owner":0,"select":0,"doctype":"DocPerm"}],"links":[],"fields":[{"name":"05casmr2cc","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 16:03:53.246756","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":1,"fieldname":"section_break_axsh","fieldtype":"Section Break","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"05cljl6eej","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 16:03:53.246756","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":2,"fieldname":"class_link","label":"Class","fieldtype":"Link","options":"Class","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":1,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"link_filters":"","show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"05c7cd93sv","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 16:03:53.246756","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":3,"fieldname":"academic_year","label":"Academic Year","fieldtype":"Link","options":"Academic Year","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"05c6llnikp","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 16:03:53.246756","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":4,"fieldname":"date","label":"Date","fieldtype":"Date","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":1,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"05cgrup8oa","creation":"2025-07-16 13:19:56.547902","modified":"2025-07-16 16:03:53.246756","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Class Attendance","parentfield":"fields","parenttype":"DocType","idx":5,"fieldname":"students","label":"Students","fieldtype":"Table","options":"Class Attendance Student","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"show_on_timeline":0,"make_attachment_public":0,"doctype":"DocField"}],"actions":[],"__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-07-16 18:43:21,044 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'report_name': 'Test Wise Marksheet', 'filters': '{"test_name":"July Test","class_link":"5m99fk1nj7","academic_year":"2025-2026"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2025-07-16 18:43:21,836 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'report_name': 'Test Wise Marksheet', 'filters': '{"test_name":"July Test","class_link":"5m99fk1nj7","academic_year":"2025-2026"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2025-07-17 12:26:30,424 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'doctype': 'Student Report Card', 'name': 's6g6bdkg58', 'cmd': 'frappe.desk.form.load.getdoc'}
+2025-07-17 12:30:20,146 ERROR frappe Error while inserting deferred Error Log record: Error Log ep94h7adte: 'Title' (Module import failed for Student Report Card, the DocType you're trying to open might be deleted.
+Error: No module named 'frappe.core.doctype.student_report_card') will get truncated, as max characters allowed is 140
+Site: erp.amey.local
+Form Dict: {}
+2025-07-17 13:12:15,572 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'student': 'Administrator', 'cmd': 'student_master.student_master.api.student_dashboard.get_dashboard_data'}
+2025-07-17 13:19:23,694 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'name': 'student-dashboard', 'cmd': 'frappe.desk.desk_page.getpage'}
+2025-07-17 13:19:35,916 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'name': 'student-dashboard', 'cmd': 'frappe.desk.desk_page.getpage'}
+2025-07-18 15:21:43,142 ERROR frappe New Exception collected in error log
+Site: erp.amey.local
+Form Dict: {'name': 'student-dashboard', 'cmd': 'frappe.desk.desk_page.getpage'}

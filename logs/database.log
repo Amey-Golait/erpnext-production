@@ -1,0 +1,605 @@
+2025-07-09 17:53:56,156 WARNING database DDL Query made to DB:
+create table `tabRazorpayX Configuration` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`disabled` int(1) not null default 0,
+`key_id` varchar(140),
+`key_secret` text,
+`account_id` varchar(140) unique,
+`webhook_secret` text,
+`bank_account` varchar(140) unique,
+`company_account` varchar(140),
+`company` varchar(140),
+`payouts_from` varchar(140) default 'Current Account',
+`bank` varchar(140),
+`ifsc_code` varchar(140),
+`account_number` varchar(140),
+`last_sync_on` date,
+`auto_cancel_payout` int(1) not null default 0,
+`automate_fees_accounting` int(1) not null default 1,
+`creditors_account` varchar(140),
+`payable_account` varchar(140),
+`supplier` varchar(140),
+`create_je_on_reversal` int(1) not null default 1,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-07-09 17:54:02,745 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPayment Entry` ADD COLUMN `razorpayx_payout_desc` varchar(30), ADD COLUMN `razorpayx_payout_status` varchar(140) default 'Not Initiated', ADD COLUMN `razorpayx_payout_id` varchar(140), ADD COLUMN `razorpayx_payout_link_id` varchar(140)
+2025-07-09 17:54:02,891 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPayment Entry` MODIFY `base_received_amount` decimal(21,9) not null default 0, MODIFY `difference_amount` decimal(21,9) not null default 0, MODIFY `unallocated_amount` decimal(21,9) not null default 0, MODIFY `total_taxes_and_charges` decimal(21,9) not null default 0, MODIFY `base_total_taxes_and_charges` decimal(21,9) not null default 0, MODIFY `party_balance` decimal(21,9) not null default 0, MODIFY `paid_from_account_balance` decimal(21,9) not null default 0, MODIFY `paid_to_account_balance` decimal(21,9) not null default 0, MODIFY `base_paid_amount` decimal(21,9) not null default 0, MODIFY `source_exchange_rate` decimal(21,9) not null default 0, MODIFY `paid_amount_after_tax` decimal(21,9) not null default 0, MODIFY `paid_amount` decimal(21,9) not null default 0, MODIFY `target_exchange_rate` decimal(21,9) not null default 0, MODIFY `received_amount_after_tax` decimal(21,9) not null default 0, MODIFY `received_amount` decimal(21,9) not null default 0, MODIFY `base_paid_amount_after_tax` decimal(21,9) not null default 0, MODIFY `base_total_allocated_amount` decimal(21,9) not null default 0, MODIFY `total_allocated_amount` decimal(21,9) not null default 0, MODIFY `base_received_amount_after_tax` decimal(21,9) not null default 0
+2025-07-09 17:54:03,373 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRazorpayX Configuration` ADD COLUMN `pay_on_auto_submit` int(1) not null default 1
+2025-07-09 17:54:26,877 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-09 17:54:32,354 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-09 17:54:37,589 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-09 17:54:40,145 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent` MODIFY `date_of_birth` date
+2025-07-09 17:54:40,457 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent` DROP INDEX `student_id`
+2025-07-09 17:55:00,548 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent` MODIFY `date_of_birth` varchar(140), ADD UNIQUE INDEX IF NOT EXISTS student_id (`student_id`)
+2025-07-10 11:25:53,612 WARNING database DDL Query made to DB:
+create table `tabDoctor Availability` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-07-10 11:29:59,360 WARNING database DDL Query made to DB:
+alter table `tabDoctor Availability` add column if not exists parent varchar(140)
+2025-07-10 11:29:59,363 WARNING database DDL Query made to DB:
+alter table `tabDoctor Availability` add column if not exists parenttype varchar(140)
+2025-07-10 11:29:59,364 WARNING database DDL Query made to DB:
+alter table `tabDoctor Availability` add column if not exists parentfield varchar(140)
+2025-07-10 11:29:59,609 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDoctor Availability` ADD COLUMN `day_of_week` varchar(140), ADD COLUMN `is_working_day` int(1) not null default 0, ADD COLUMN `start_time` time(6), ADD COLUMN `end_time` time(6)
+2025-07-10 11:36:33,809 WARNING database DDL Query made to DB:
+alter table `tabDoctor Availability` add column if not exists parent varchar(140)
+2025-07-10 11:36:33,813 WARNING database DDL Query made to DB:
+alter table `tabDoctor Availability` add column if not exists parenttype varchar(140)
+2025-07-10 11:36:33,814 WARNING database DDL Query made to DB:
+alter table `tabDoctor Availability` add column if not exists parentfield varchar(140)
+2025-07-10 11:40:04,015 WARNING database DDL Query made to DB:
+create table `tabDoctor Time Slot` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-07-10 11:48:16,707 WARNING database DDL Query made to DB:
+alter table `tabDoctor Availability` add column if not exists parent varchar(140)
+2025-07-10 11:48:16,710 WARNING database DDL Query made to DB:
+alter table `tabDoctor Availability` add column if not exists parenttype varchar(140)
+2025-07-10 11:48:16,712 WARNING database DDL Query made to DB:
+alter table `tabDoctor Availability` add column if not exists parentfield varchar(140)
+2025-07-10 11:48:16,927 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDoctor Availability` ADD COLUMN `shift` varchar(140), ADD COLUMN `off_day` text
+2025-07-10 11:53:16,336 WARNING database DDL Query made to DB:
+alter table `tabDoctor Availability` add column if not exists parent varchar(140)
+2025-07-10 11:53:16,340 WARNING database DDL Query made to DB:
+alter table `tabDoctor Availability` add column if not exists parenttype varchar(140)
+2025-07-10 11:53:16,342 WARNING database DDL Query made to DB:
+alter table `tabDoctor Availability` add column if not exists parentfield varchar(140)
+2025-07-10 11:54:17,427 WARNING database DDL Query made to DB:
+alter table `tabDoctor Availability` add column if not exists parent varchar(140)
+2025-07-10 11:54:17,429 WARNING database DDL Query made to DB:
+alter table `tabDoctor Availability` add column if not exists parenttype varchar(140)
+2025-07-10 11:54:17,431 WARNING database DDL Query made to DB:
+alter table `tabDoctor Availability` add column if not exists parentfield varchar(140)
+2025-07-10 11:55:39,322 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-10 11:55:44,289 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-10 11:55:49,279 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-10 11:55:53,139 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent` MODIFY `date_of_birth` date
+2025-07-10 11:55:53,565 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent` DROP INDEX `student_id`
+2025-07-10 11:56:10,131 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent` MODIFY `date_of_birth` varchar(140), ADD UNIQUE INDEX IF NOT EXISTS student_id (`student_id`)
+2025-07-10 11:59:34,349 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDoctor` ADD COLUMN `off_day` text
+2025-07-10 12:07:06,031 WARNING database DDL Query made to DB:
+ALTER TABLE `tabClinic Appointment` MODIFY `end_time` time(6)
+2025-07-10 12:16:21,020 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parent varchar(140)
+2025-07-10 12:16:21,022 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parenttype varchar(140)
+2025-07-10 12:16:21,024 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parentfield varchar(140)
+2025-07-10 12:16:21,277 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDoctor Time Slot` ADD COLUMN `day_of_week` varchar(140), ADD COLUMN `start_time` time(6), ADD COLUMN `end_time` time(6), ADD COLUMN `is_active` int(1) not null default 0
+2025-07-10 12:17:46,095 WARNING database DDL Query made to DB:
+alter table `tabPrescription Medication` add column if not exists parent varchar(140)
+2025-07-10 12:17:46,098 WARNING database DDL Query made to DB:
+alter table `tabPrescription Medication` add column if not exists parenttype varchar(140)
+2025-07-10 12:17:46,100 WARNING database DDL Query made to DB:
+alter table `tabPrescription Medication` add column if not exists parentfield varchar(140)
+2025-07-10 12:22:50,942 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parent varchar(140)
+2025-07-10 12:22:50,947 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parenttype varchar(140)
+2025-07-10 12:22:50,948 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parentfield varchar(140)
+2025-07-10 12:23:36,265 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parent varchar(140)
+2025-07-10 12:23:36,270 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parenttype varchar(140)
+2025-07-10 12:23:36,271 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parentfield varchar(140)
+2025-07-10 12:26:57,658 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parent varchar(140)
+2025-07-10 12:26:57,663 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parenttype varchar(140)
+2025-07-10 12:26:57,664 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parentfield varchar(140)
+2025-07-10 12:26:57,908 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDoctor Time Slot` ADD COLUMN `shift` varchar(140)
+2025-07-10 12:30:39,495 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parent varchar(140)
+2025-07-10 12:30:39,498 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parenttype varchar(140)
+2025-07-10 12:30:39,500 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parentfield varchar(140)
+2025-07-10 12:31:50,236 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parent varchar(140)
+2025-07-10 12:31:50,240 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parenttype varchar(140)
+2025-07-10 12:31:50,242 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parentfield varchar(140)
+2025-07-10 12:54:06,173 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parent varchar(140)
+2025-07-10 12:54:06,177 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parenttype varchar(140)
+2025-07-10 12:54:06,178 WARNING database DDL Query made to DB:
+alter table `tabDoctor Time Slot` add column if not exists parentfield varchar(140)
+2025-07-10 12:54:06,490 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDoctor Time Slot` MODIFY `is_active` int(1) not null default 1
+2025-07-10 13:32:19,149 WARNING database DDL Query made to DB:
+ALTER TABLE `tabClinic Appointment` ADD COLUMN `custom_display` varchar(140)
+2025-07-15 15:37:26,541 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-15 15:37:32,810 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-15 15:37:39,218 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-15 15:37:44,607 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent` MODIFY `date_of_birth` date
+2025-07-15 15:37:44,888 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent` DROP INDEX `student_id`
+2025-07-15 15:44:27,853 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-15 15:44:31,851 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-15 15:44:36,399 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-15 15:44:52,342 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent` MODIFY `date_of_birth` varchar(140), ADD UNIQUE INDEX IF NOT EXISTS student_id (`student_id`)
+2025-07-15 16:57:41,236 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-15 16:57:44,295 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-15 16:57:49,815 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-15 16:57:54,089 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent` MODIFY `date_of_birth` date
+2025-07-15 16:57:54,379 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent` DROP INDEX `student_id`
+2025-07-15 17:06:00,171 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-15 17:06:03,560 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-15 17:06:07,320 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-15 17:08:25,782 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-15 17:08:28,929 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-15 17:08:32,443 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-15 17:08:46,672 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent` MODIFY `date_of_birth` varchar(140), ADD UNIQUE INDEX IF NOT EXISTS student_id (`student_id`)
+2025-07-15 17:49:24,800 WARNING database DDL Query made to DB:
+create table `tabStudent Attendance` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-07-15 17:49:24,800 WARNING database DDL Query made to DB:
+create table `tabStudent Attendance` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-07-15 17:49:24,800 WARNING database DDL Query made to DB:
+create table `tabStudent Attendance` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-07-15 17:49:24,800 WARNING database DDL Query made to DB:
+create table `tabStudent Attendance` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-07-15 17:56:52,657 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent Attendance` ADD COLUMN `student` varchar(140), ADD COLUMN `student_name` varchar(140), ADD COLUMN `date` date, ADD COLUMN `status` varchar(140), ADD COLUMN `class` varchar(140), ADD COLUMN `remark` text, ADD COLUMN `academic_year` varchar(140)
+2025-07-15 18:36:11,425 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-15 18:36:15,098 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-15 18:36:19,759 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-15 18:37:09,932 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-15 18:37:14,001 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-15 18:37:17,984 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-15 18:43:38,489 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent Attendance` ADD COLUMN `end_date` date
+2025-07-15 18:45:36,688 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-15 18:45:39,906 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-15 18:45:43,802 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-15 18:49:17,293 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent Attendance` ADD COLUMN `end` date
+2025-07-15 18:50:19,836 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-15 18:50:22,777 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-15 18:50:26,166 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-15 18:51:32,339 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent Attendance` ADD COLUMN `start` date
+2025-07-15 18:56:26,471 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-15 18:56:30,092 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-15 18:56:34,726 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-15 18:56:52,050 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-15 18:56:54,479 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-15 18:56:57,172 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-16 11:36:46,686 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAcademic Year` ADD UNIQUE INDEX IF NOT EXISTS academic_year (`academic_year`)
+2025-07-16 11:55:38,297 WARNING database DDL Query made to DB:
+ALTER TABLE `tabClass` ADD COLUMN `title` varchar(140)
+2025-07-16 11:56:22,255 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-16 11:56:27,094 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-16 11:56:31,777 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-16 11:59:25,498 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-16 11:59:28,418 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-16 11:59:31,217 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-16 12:07:22,515 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-16 12:07:26,711 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-16 12:07:31,033 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-16 12:17:35,622 WARNING database DDL Query made to DB:
+ALTER TABLE `tabClass Enrollment` ADD COLUMN `class_link` varchar(140)
+2025-07-16 12:52:01,163 WARNING database DDL Query made to DB:
+ALTER TABLE `tabClass Enrollment` ADD COLUMN `display_title` varchar(140)
+2025-07-16 13:19:56,692 WARNING database DDL Query made to DB:
+create table `tabClass Attendance` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-07-16 13:22:14,564 WARNING database DDL Query made to DB:
+create table `tabClass Attendance Student` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-07-16 13:24:09,547 WARNING database DDL Query made to DB:
+alter table `tabClass Attendance Student` add column if not exists parent varchar(140)
+2025-07-16 13:24:09,553 WARNING database DDL Query made to DB:
+alter table `tabClass Attendance Student` add column if not exists parenttype varchar(140)
+2025-07-16 13:24:09,555 WARNING database DDL Query made to DB:
+alter table `tabClass Attendance Student` add column if not exists parentfield varchar(140)
+2025-07-16 13:24:09,913 WARNING database DDL Query made to DB:
+ALTER TABLE `tabClass Attendance Student` ADD COLUMN `student` varchar(140), ADD COLUMN `student_name` varchar(140), ADD COLUMN `status` varchar(140), ADD COLUMN `remark` text
+2025-07-16 13:24:22,830 WARNING database DDL Query made to DB:
+ALTER TABLE `tabClass Attendance` ADD COLUMN `class_link` varchar(140), ADD COLUMN `academic_year` varchar(140), ADD COLUMN `date` date
+2025-07-16 13:30:41,862 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-16 13:30:45,877 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-16 13:30:50,073 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-16 13:43:33,654 WARNING database DDL Query made to DB:
+alter table `tabClass Attendance Student` add column if not exists parent varchar(140)
+2025-07-16 13:43:33,658 WARNING database DDL Query made to DB:
+alter table `tabClass Attendance Student` add column if not exists parenttype varchar(140)
+2025-07-16 13:43:33,659 WARNING database DDL Query made to DB:
+alter table `tabClass Attendance Student` add column if not exists parentfield varchar(140)
+2025-07-16 15:30:54,613 WARNING database DDL Query made to DB:
+alter table `tabClass Attendance Student` add column if not exists parent varchar(140)
+2025-07-16 15:30:54,616 WARNING database DDL Query made to DB:
+alter table `tabClass Attendance Student` add column if not exists parenttype varchar(140)
+2025-07-16 15:30:54,618 WARNING database DDL Query made to DB:
+alter table `tabClass Attendance Student` add column if not exists parentfield varchar(140)
+2025-07-16 15:31:08,935 WARNING database DDL Query made to DB:
+alter table `tabClass Attendance Student` add column if not exists parent varchar(140)
+2025-07-16 15:31:08,936 WARNING database DDL Query made to DB:
+alter table `tabClass Attendance Student` add column if not exists parenttype varchar(140)
+2025-07-16 15:31:08,937 WARNING database DDL Query made to DB:
+alter table `tabClass Attendance Student` add column if not exists parentfield varchar(140)
+2025-07-16 15:49:30,090 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-16 15:49:33,601 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-16 15:49:36,843 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-16 15:51:57,888 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-16 15:52:01,134 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-16 15:52:04,905 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-16 15:54:36,506 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-16 15:54:39,270 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-16 15:54:42,147 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-16 16:03:42,473 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-16 16:03:45,804 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-16 16:03:49,533 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-16 16:06:07,045 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-16 16:06:10,704 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-16 16:06:14,454 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-16 17:06:11,373 WARNING database DDL Query made to DB:
+create table `tabStudent Exam Result` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-07-16 17:08:34,007 WARNING database DDL Query made to DB:
+alter table `tabStudent Exam Result` add column if not exists parent varchar(140)
+2025-07-16 17:08:34,009 WARNING database DDL Query made to DB:
+alter table `tabStudent Exam Result` add column if not exists parenttype varchar(140)
+2025-07-16 17:08:34,011 WARNING database DDL Query made to DB:
+alter table `tabStudent Exam Result` add column if not exists parentfield varchar(140)
+2025-07-16 17:08:34,342 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent Exam Result` ADD COLUMN `student` varchar(140), ADD COLUMN `student_name` varchar(140), ADD COLUMN `status` varchar(140), ADD COLUMN `marks_obtained` int(11) not null default 0
+2025-07-16 17:08:52,924 WARNING database DDL Query made to DB:
+create table `tabExam` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-07-16 17:13:17,765 WARNING database DDL Query made to DB:
+ALTER TABLE `tabExam` ADD COLUMN `exam_name` varchar(140), ADD COLUMN `subject` varchar(140), ADD COLUMN `exam_date` date, ADD COLUMN `class_link` varchar(140), ADD COLUMN `academic_year` varchar(140), ADD COLUMN `total_marks` int(11) not null default 0
+2025-07-16 17:17:33,262 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-16 17:17:36,815 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-16 17:17:40,932 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-16 17:19:44,899 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-16 17:19:48,138 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-16 17:19:51,761 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-16 17:29:01,413 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-16 17:29:03,985 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-16 17:29:10,091 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-16 17:34:37,656 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-16 17:34:40,563 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-16 17:34:44,276 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-16 17:37:43,124 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-07-16 17:37:46,780 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2025-07-16 17:37:49,711 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2025-07-17 11:53:22,475 WARNING database DDL Query made to DB:
+create table `tabStudent Report Card` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-07-17 11:53:22,475 WARNING database DDL Query made to DB:
+create table `tabStudent Report Card` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-07-17 11:54:19,856 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent Report Card` ADD COLUMN `student` varchar(140), ADD COLUMN `student_name` varchar(140)
+2025-07-17 11:54:19,856 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent Report Card` ADD COLUMN `student` varchar(140), ADD COLUMN `student_name` varchar(140)
+2025-07-18 12:44:58,202 WARNING database DDL Query made to DB:
+ALTER TABLE `tabExam` ADD COLUMN `amended_from` varchar(140)
+2025-07-18 12:44:58,405 WARNING database DDL Query made to DB:
+ALTER TABLE `tabExam` ADD INDEX `amended_from_index`(`amended_from`)
+2025-07-18 12:46:44,061 WARNING database DDL Query made to DB:
+ALTER TABLE `tabClass Attendance` ADD COLUMN `amended_from` varchar(140)
+2025-07-18 12:46:44,210 WARNING database DDL Query made to DB:
+ALTER TABLE `tabClass Attendance` ADD INDEX `amended_from_index`(`amended_from`)
+2025-07-18 13:08:03,892 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent` ADD COLUMN `amended_from` varchar(140)
+2025-07-18 13:08:04,080 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent` ADD INDEX `amended_from_index`(`amended_from`)

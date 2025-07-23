@@ -1,0 +1,10 @@
+{
+  "db_type": "mariadb",
+  "db_host": "127.0.0.1",
+  "db_port": 3306,
+  "db_name": "_06a502cd4c3d610c",
+  "db_username": "_06a502cd4c3d610c",
+  "db_password": "amee8386",
+  "developer_mode": 1,
+  "enable_server_scripts": 1
+}

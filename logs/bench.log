@@ -1,0 +1,1074 @@
+2025-07-03 16:17:26,773 DEBUG cd erpnext-bench && python3 -m venv env
+2025-07-03 16:17:34,610 DEBUG cd erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-07-03 16:17:40,200 DEBUG cd erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet wheel
+2025-07-03 16:17:42,494 LOG Getting frappe
+2025-07-03 16:17:42,495 DEBUG cd erpnext-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2025-07-03 16:17:52,085 LOG Installing frappe
+2025-07-03 16:17:52,087 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/amee/erpnext-bench/apps/frappe 
+2025-07-03 16:19:25,075 DEBUG cd /Users/amee/erpnext-bench/apps/frappe && yarn install --check-files
+2025-07-03 16:19:45,836 DEBUG cd erpnext-bench && bench build
+2025-07-03 16:19:46,576 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-03 16:20:30,830 LOG setting up backups
+2025-07-03 16:20:34,564 LOG backups were set up
+2025-07-03 16:20:34,565 INFO Bench erpnext-bench initialized
+2025-07-03 16:20:35,012 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-03 16:20:57,723 INFO /Users/amee/Library/Python/3.9/bin/bench get-app erpnext --branch version-15
+2025-07-03 16:20:58,457 LOG Getting erpnext
+2025-07-03 16:20:58,458 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2025-07-03 16:21:06,926 LOG Installing erpnext
+2025-07-03 16:21:06,927 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/amee/erpnext-bench/apps/erpnext 
+2025-07-03 16:21:31,430 DEBUG cd /Users/amee/erpnext-bench/apps/erpnext && yarn install --check-files
+2025-07-03 16:21:32,032 DEBUG bench build --app erpnext
+2025-07-03 16:21:32,327 INFO /Users/amee/Library/Python/3.9/bin/bench build --app erpnext
+2025-07-03 16:21:46,461 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-03 16:21:49,025 INFO /Users/amee/Library/Python/3.9/bin/bench new-site erp.amey.local --mariadb-root-username Amee --mariadb-root-password amee8386
+2025-07-03 16:23:22,786 INFO /Users/amee/Library/Python/3.9/bin/bench new-site erp.amey.local --mariadb-root-username amee --mariadb-root-password amee8386
+2025-07-03 16:23:38,264 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local install-app erpnext
+2025-07-03 16:24:53,683 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local install-app erpnext
+2025-07-03 16:25:46,025 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local install-app erpnext
+2025-07-03 16:27:01,217 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local install-app erpnext
+2025-07-03 16:28:19,741 INFO /Users/amee/Library/Python/3.9/bin/bench drop-site erp.amey.local --force
+2025-07-03 16:28:56,266 INFO /Users/amee/Library/Python/3.9/bin/bench drop-site erp.amey.local --force
+2025-07-03 16:29:32,715 INFO /Users/amee/Library/Python/3.9/bin/bench drop-site erp.amey.local --force --no-backup --mariadb-root-username amee --mariadb-root-password amee8386
+2025-07-03 16:30:12,802 INFO /Users/amee/Library/Python/3.9/bin/bench new-site erp.amey.local --mariadb-root-username amee --mariadb-root-password amee8386
+2025-07-03 16:32:09,323 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local install-app erpnext
+2025-07-03 16:35:03,235 INFO /Users/amee/Library/Python/3.9/bin/bench start
+2025-07-03 16:35:45,653 INFO /Users/amee/Library/Python/3.9/bin/bench start
+2025-07-03 16:35:47,314 INFO /Users/amee/Library/Python/3.9/bin/bench serve --port 8000
+2025-07-03 16:35:47,317 INFO /Users/amee/Library/Python/3.9/bin/bench watch
+2025-07-03 16:35:47,355 INFO /Users/amee/Library/Python/3.9/bin/bench schedule
+2025-07-03 16:35:47,356 INFO /Users/amee/Library/Python/3.9/bin/bench worker
+2025-07-03 16:36:38,348 INFO /Users/amee/Library/Python/3.9/bin/bench start
+2025-07-03 16:36:40,268 INFO /Users/amee/Library/Python/3.9/bin/bench serve --port 8000
+2025-07-03 16:36:40,313 INFO /Users/amee/Library/Python/3.9/bin/bench watch
+2025-07-03 16:36:40,381 INFO /Users/amee/Library/Python/3.9/bin/bench schedule
+2025-07-03 16:36:40,407 INFO /Users/amee/Library/Python/3.9/bin/bench worker
+2025-07-03 16:44:50,762 INFO /Users/amee/Library/Python/3.9/bin/bench new-app clinic_app
+2025-07-03 16:44:50,785 LOG creating new app clinic_app
+2025-07-03 16:46:48,657 LOG Installing clinic_app
+2025-07-03 16:46:48,663 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/amee/erpnext-bench/apps/clinic_app 
+2025-07-03 16:46:52,936 DEBUG bench build --app clinic_app
+2025-07-03 16:46:53,680 INFO /Users/amee/Library/Python/3.9/bin/bench build --app clinic_app
+2025-07-03 16:47:02,486 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-03 16:47:35,979 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local install-app clinic_app
+2025-07-03 16:48:13,292 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local execute frappe.commands.utils.add_doctype --args ['Doctor', 'clinic_app']
+2025-07-03 16:49:12,804 INFO /Users/amee/Library/Python/3.9/bin/bench start
+2025-07-03 16:49:14,651 INFO /Users/amee/Library/Python/3.9/bin/bench watch
+2025-07-03 16:49:14,654 INFO /Users/amee/Library/Python/3.9/bin/bench serve --port 8000
+2025-07-03 16:49:14,661 INFO /Users/amee/Library/Python/3.9/bin/bench schedule
+2025-07-03 16:49:14,671 INFO /Users/amee/Library/Python/3.9/bin/bench worker
+2025-07-03 17:26:18,204 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local reload-doc clinic_app doctype clinic_appointment
+2025-07-03 17:26:20,856 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-03 17:26:21,347 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-03 17:26:48,291 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-03 17:26:51,831 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-03 17:26:52,197 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-03 18:00:01,873 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-04 11:11:48,492 INFO /Users/amee/Library/Python/3.9/bin/bench start
+2025-07-04 11:11:50,233 INFO /Users/amee/Library/Python/3.9/bin/bench serve --port 8000
+2025-07-04 11:11:50,237 INFO /Users/amee/Library/Python/3.9/bin/bench watch
+2025-07-04 11:11:50,261 INFO /Users/amee/Library/Python/3.9/bin/bench schedule
+2025-07-04 11:11:50,268 INFO /Users/amee/Library/Python/3.9/bin/bench worker
+2025-07-04 12:00:01,251 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-04 12:32:36,992 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 12:32:37,625 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 13:00:56,380 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local new-page doctor-prescription --standard
+2025-07-04 13:07:58,777 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 13:07:59,595 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 13:12:01,101 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local export-fixtures
+2025-07-04 13:12:15,293 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local migrate
+2025-07-04 13:12:37,088 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 13:12:37,477 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 13:12:38,865 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local migrate
+2025-07-04 13:12:55,665 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 13:12:57,015 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 13:15:41,023 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 13:16:19,423 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local migrate
+2025-07-04 13:16:36,373 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 13:16:36,736 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 13:20:13,235 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local console
+2025-07-04 13:21:13,554 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local export-fixtures
+2025-07-04 13:21:16,746 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local migrate
+2025-07-04 13:21:36,010 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 13:21:36,416 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 13:22:38,792 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local migrate
+2025-07-04 13:22:55,463 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 13:22:55,761 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 13:22:57,550 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local console
+2025-07-04 13:27:20,269 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 13:27:20,521 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 13:28:42,666 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local console
+2025-07-04 13:39:33,333 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 13:40:11,579 INFO /Users/amee/Library/Python/3.9/bin/bench clear-cache
+2025-07-04 13:40:13,691 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 13:40:14,114 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 13:45:19,027 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 13:46:03,698 INFO /Users/amee/Library/Python/3.9/bin/bench clear-cache
+2025-07-04 13:46:06,100 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 13:46:06,496 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 14:02:40,364 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 14:03:25,010 INFO /Users/amee/Library/Python/3.9/bin/bench clear-cache
+2025-07-04 14:03:27,053 INFO /Users/amee/Library/Python/3.9/bin/bench migrate
+2025-07-04 14:03:29,034 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 14:03:29,523 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 14:07:26,364 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-04 14:07:29,728 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local build
+2025-07-04 14:08:33,980 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local restart
+2025-07-04 14:08:34,015 WARNING /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local restart executed with exit code 2
+2025-07-04 14:08:34,448 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 14:09:53,248 INFO /Users/amee/Library/Python/3.9/bin/bench list-apps
+2025-07-04 15:11:16,424 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 15:11:58,748 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-04 15:12:01,674 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 15:12:02,136 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 15:14:17,726 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local console
+2025-07-04 15:18:55,957 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 15:19:36,192 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-04 15:19:39,098 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 15:19:39,489 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 15:21:16,450 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 15:21:58,299 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-04 15:22:00,994 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 15:22:01,371 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 15:24:12,138 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 15:24:49,083 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-04 15:24:51,814 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 15:24:52,237 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 15:26:54,067 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 15:27:42,026 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-04 15:27:45,980 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 15:27:46,394 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 15:28:54,206 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local console
+2025-07-04 15:29:27,720 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local export-fixtures --app clinic_app
+2025-07-04 15:29:59,477 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local migrate
+2025-07-04 15:30:19,296 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 15:30:59,325 INFO /Users/amee/Library/Python/3.9/bin/bench clear-cache
+2025-07-04 15:31:01,424 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 15:31:01,783 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 15:33:24,045 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 15:34:14,673 INFO /Users/amee/Library/Python/3.9/bin/bench clear-cache
+2025-07-04 15:34:16,987 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 15:34:17,429 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 15:39:47,842 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-04 15:39:51,768 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local build
+2025-07-04 15:40:40,527 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 15:40:40,994 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 15:46:28,323 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local build
+2025-07-04 15:47:13,829 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 15:47:14,372 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 15:50:03,018 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local build
+2025-07-04 15:50:51,240 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 15:50:51,923 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 15:52:24,689 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local build
+2025-07-04 15:53:08,981 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 15:53:09,450 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 15:54:48,196 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local build
+2025-07-04 15:55:26,682 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 15:55:27,115 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 15:59:44,731 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 16:00:34,399 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 16:00:34,935 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 16:08:53,375 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 16:09:35,237 INFO /Users/amee/Library/Python/3.9/bin/bench clear-cache
+2025-07-04 16:09:37,765 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 16:09:38,467 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 16:12:49,158 INFO /Users/amee/Library/Python/3.9/bin/bench clear-cache
+2025-07-04 16:12:50,538 INFO /Users/amee/Library/Python/3.9/bin/bench clear-website-cache
+2025-07-04 16:12:52,738 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 16:13:30,908 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 16:13:31,330 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 16:14:54,022 INFO /Users/amee/Library/Python/3.9/bin/bench setup py-dev
+2025-07-04 16:14:54,033 WARNING /Users/amee/Library/Python/3.9/bin/bench setup py-dev executed with exit code 2
+2025-07-04 16:14:54,265 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 16:15:01,675 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local uninstall-app clinic_app
+2025-07-04 16:15:27,200 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local install-app clinic_app
+2025-07-04 16:15:44,047 INFO /Users/amee/Library/Python/3.9/bin/bench clear-cache
+2025-07-04 16:15:45,516 INFO /Users/amee/Library/Python/3.9/bin/bench clear-website-cache
+2025-07-04 16:15:47,142 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 16:16:41,409 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 16:16:41,963 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 16:17:08,538 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local migrate
+2025-07-04 16:17:30,559 INFO /Users/amee/Library/Python/3.9/bin/bench clear-cache
+2025-07-04 16:17:32,643 INFO /Users/amee/Library/Python/3.9/bin/bench clear-website-cache
+2025-07-04 16:17:34,169 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 16:18:16,514 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 16:18:16,985 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 16:20:13,490 INFO /Users/amee/Library/Python/3.9/bin/bench new-app clinic_app
+2025-07-04 16:20:13,499 LOG creating new app clinic_app
+2025-07-04 16:21:15,270 LOG Installing clinic_app
+2025-07-04 16:21:15,275 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/amee/erpnext-bench/apps/clinic_app 
+2025-07-04 16:21:24,169 DEBUG bench build --app clinic_app
+2025-07-04 16:21:24,993 INFO /Users/amee/Library/Python/3.9/bin/bench build --app clinic_app
+2025-07-04 16:21:32,966 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 16:26:18,298 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 16:29:31,909 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local uninstall-app clinic_app --force
+2025-07-04 16:29:35,976 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local install-app clinic_app
+2025-07-04 16:34:12,657 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local uninstall-app clinic_app --force
+2025-07-04 16:34:32,947 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local install-app clinic_app
+2025-07-04 16:34:44,165 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 16:35:37,405 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 16:35:38,098 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 16:35:38,616 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-04 16:40:58,866 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local uninstall-app clinic_app --force
+2025-07-04 16:41:35,759 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local install-app clinic_app
+2025-07-04 16:41:42,842 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 16:42:38,611 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 16:42:39,019 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 16:42:39,385 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-04 16:49:06,126 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local uninstall-app clinic_app --force
+2025-07-04 16:49:21,027 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local install-app clinic_app
+2025-07-04 16:49:35,746 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 16:50:17,000 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 16:50:17,467 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 16:50:21,245 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-04 16:56:40,050 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local uninstall-app clinic_app --force
+2025-07-04 16:56:42,902 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local install-app clinic_app
+2025-07-04 16:56:44,914 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 16:56:46,851 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 16:56:47,276 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 16:56:47,600 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-04 16:57:20,494 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local uninstall-app clinic_app --force
+2025-07-04 16:57:22,846 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local install-app clinic_app
+2025-07-04 16:57:25,372 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 16:57:27,113 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 16:57:27,504 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 16:57:27,844 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-04 16:58:54,865 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local uninstall-app clinic_app --force
+2025-07-04 16:59:08,699 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local install-app clinic_app
+2025-07-04 16:59:20,159 INFO /Users/amee/Library/Python/3.9/bin/bench build
+2025-07-04 17:00:07,388 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 17:00:07,798 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 17:00:08,591 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-04 17:04:16,138 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 17:04:16,564 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 17:30:05,198 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.localhost uninstall-app clinic_app
+2025-07-04 17:30:44,678 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local uninstall-app clinic_app
+2025-07-04 17:31:16,875 INFO /Users/amee/Library/Python/3.9/bin/bench new-app clinic_app
+2025-07-04 17:31:16,896 LOG creating new app clinic_app
+2025-07-04 17:32:15,563 LOG Installing clinic_app
+2025-07-04 17:32:15,570 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/amee/erpnext-bench/apps/clinic_app 
+2025-07-04 17:32:21,302 DEBUG bench build --app clinic_app
+2025-07-04 17:32:21,589 INFO /Users/amee/Library/Python/3.9/bin/bench build --app clinic_app
+2025-07-04 17:32:29,661 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 17:32:31,719 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local install-app clinic_app
+2025-07-04 17:43:51,917 INFO /Users/amee/Library/Python/3.9/bin/bench export-fixtures
+2025-07-04 17:46:22,315 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local uninstall-app clinic_app
+2025-07-04 17:46:52,547 INFO /Users/amee/Library/Python/3.9/bin/bench new-app clinic_app
+2025-07-04 17:46:52,574 LOG creating new app clinic_app
+2025-07-04 17:48:44,007 LOG Installing clinic_app
+2025-07-04 17:48:44,011 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/amee/erpnext-bench/apps/clinic_app 
+2025-07-04 17:48:51,294 DEBUG bench build --app clinic_app
+2025-07-04 17:48:51,794 INFO /Users/amee/Library/Python/3.9/bin/bench build --app clinic_app
+2025-07-04 17:49:00,970 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 17:49:01,379 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local install-app clinic_app
+2025-07-04 17:49:22,663 INFO /Users/amee/Library/Python/3.9/bin/bench export-fixtures
+2025-07-04 18:00:00,681 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-04 18:02:38,112 INFO /Users/amee/Library/Python/3.9/bin/bench export-fixtures
+2025-07-04 18:02:53,614 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local export-fixtures
+2025-07-04 18:08:50,486 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local export-fixtures
+2025-07-04 19:24:52,099 INFO /Users/amee/Library/Python/3.9/bin/bench new-module clinic --app clinic_app
+2025-07-04 19:27:10,280 INFO /Users/amee/Library/Python/3.9/bin/bench new-doctype Doctor --module clinic_name --custom --fields [] --permissions []
+2025-07-04 20:03:40,775 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 20:03:41,491 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 20:15:06,835 INFO /Users/amee/Library/Python/3.9/bin/bench clear-cache
+2025-07-04 20:15:48,536 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-04 20:31:18,225 INFO /Users/amee/Library/Python/3.9/bin/bench clear-cache
+2025-07-04 20:31:20,845 INFO /Users/amee/Library/Python/3.9/bin/bench clear-website-cache
+2025-07-04 20:32:45,493 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-04 20:32:49,231 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-website-cache
+2025-07-04 20:32:52,250 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 20:32:52,720 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 20:46:55,082 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local export-fixtures
+2025-07-04 20:47:01,431 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local export-fixtures --doctype Clinic Appointment
+2025-07-04 20:51:37,988 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local export-fixtures
+2025-07-04 20:53:02,820 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-04 20:53:06,423 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local migrate
+2025-07-04 20:59:15,836 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local migrate
+2025-07-04 20:59:37,053 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-04 20:59:40,273 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-website-cache
+2025-07-04 20:59:42,047 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 20:59:42,415 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 21:52:53,077 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local migrate
+2025-07-04 21:53:13,637 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 21:53:14,206 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 21:56:54,221 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local migrate
+2025-07-04 21:57:10,651 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 21:57:11,036 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 21:59:35,802 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local migrate
+2025-07-04 21:59:55,214 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 21:59:55,596 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 22:02:27,270 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local migrate
+2025-07-04 22:02:46,855 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 22:02:47,304 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 22:04:24,037 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local migrate
+2025-07-04 22:04:43,939 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 22:04:44,440 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 22:07:15,669 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local migrate
+2025-07-04 22:07:36,348 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 22:07:36,793 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 22:09:42,469 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local migrate
+2025-07-04 22:10:01,901 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 22:10:02,321 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 22:11:25,866 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local console
+2025-07-04 22:14:01,439 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local migrate
+2025-07-04 22:14:20,817 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-04 22:14:21,310 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-04 22:51:13,667 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-04 22:51:16,982 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local reload-doc clinic_app clinic_appointment
+2025-07-04 22:52:36,656 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local reload-doc clinic_app doctype clinic_appointment
+2025-07-04 22:54:08,965 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local export-fixtures
+2025-07-04 22:54:16,791 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local reload-doc clinic_app doctype clinic_appointment
+2025-07-05 11:01:13,782 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-05 11:01:16,545 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local migrate
+2025-07-05 11:01:40,284 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local reload-doc clinic_app doctype clinic_appointment
+2025-07-05 11:18:59,275 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local reload-doc clinic_app doctype clinic_appointment
+2025-07-05 11:19:54,331 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local export-fixtures
+2025-07-05 11:20:02,111 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local reload-doc clinic_app doctype clinic_appointment
+2025-07-05 11:20:08,923 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-05 11:20:09,645 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-05 11:30:45,807 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local reload-doc clinic_app doctype clinic_appointment
+2025-07-05 11:31:17,630 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local export-fixtures
+2025-07-05 11:31:25,357 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local reload-doc clinic_app doctype clinic_appointment
+2025-07-05 11:32:40,889 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local export-doc Clinic Appointment clinic_app
+2025-07-05 11:33:29,798 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local console
+2025-07-05 11:35:12,065 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local export-doc DocType Clinic Appointment --module Clinic App
+2025-07-05 11:35:30,071 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local console
+2025-07-05 11:36:48,836 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local export-fixtures
+2025-07-05 11:37:09,023 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local export-fixtures
+2025-07-05 11:38:23,583 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local clear-cache
+2025-07-05 11:38:25,887 INFO /Users/amee/Library/Python/3.9/bin/bench restart
+2025-07-05 11:38:26,330 INFO A newer version of bench is available: 5.24.1 → 5.25.9
+2025-07-05 11:50:37,582 INFO /Users/amee/Library/Python/3.9/bin/bench --site erp.amey.local console
+2025-07-05 12:00:02,460 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-05 18:00:01,176 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-07 12:00:04,760 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-07 12:04:27,348 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-07 12:04:29,014 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-07 12:04:29,023 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-07 12:04:29,024 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-07 12:04:29,027 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-07 12:21:22,102 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench new-app student_master
+2025-07-07 12:21:22,121 LOG creating new app student_master
+2025-07-07 12:22:46,604 LOG Installing student_master
+2025-07-07 12:22:46,615 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/amee/erpnext-bench/apps/student_master 
+2025-07-07 12:22:51,510 DEBUG bench build --app student_master
+2025-07-07 12:22:51,919 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build --app student_master
+2025-07-07 12:23:05,821 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local install-app student_master
+2025-07-07 12:26:17,154 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-07 12:26:34,475 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-07 12:26:35,747 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-07 12:26:35,754 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-07 12:26:35,777 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-07 12:26:35,781 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-07 13:08:42,728 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench export-fixtures
+2025-07-07 13:09:52,897 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local export-fixtures
+2025-07-07 13:12:40,276 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-07 13:19:41,100 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-07 13:33:08,256 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local export-fixtures
+2025-07-07 13:34:43,767 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local export-doc doctype Student student_master
+2025-07-07 13:35:04,623 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local export-doc DocType Student --module student_master --app student_master
+2025-07-07 13:35:34,240 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local execute frappe.modules.export_file --args ['DocType', 'Student', 'student_master']
+2025-07-07 13:36:00,576 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local execute frappe.modules.export_file.export_doc --args ['DocType', 'Student', 'student_master']
+2025-07-07 13:36:26,679 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local execute frappe.custom.doctype.custom_field.custom_field.export_customizations --args ['DocType', 'Student']
+2025-07-07 13:37:41,058 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-07 13:37:48,851 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-07 13:37:52,221 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-07 13:40:27,045 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local execute frappe.modules.export_file.export_doc --args ['DocType', 'Student', 'student_master']
+2025-07-07 13:48:53,127 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-07 13:49:04,497 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-07 15:14:19,271 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-07 15:14:21,665 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-07 15:20:44,696 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-07 15:20:48,509 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-07 15:23:46,237 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-07 15:23:49,764 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-07 15:24:20,899 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-07 15:24:24,483 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-07 15:24:56,010 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-07 15:25:33,570 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-07 15:25:36,769 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local build
+2025-07-07 16:03:22,597 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-07 16:03:25,928 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-07 16:08:22,257 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-07 16:08:52,654 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-07 16:08:56,826 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local build
+2025-07-07 18:00:02,281 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-08 11:05:32,449 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-08 11:05:42,652 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-08 11:06:47,915 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-08 11:06:49,292 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-08 11:06:49,310 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-08 11:06:49,364 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-08 11:06:49,370 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-08 11:08:03,720 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-08 11:08:05,094 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-08 11:08:05,110 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-08 11:08:05,144 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-08 11:08:05,176 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-08 11:08:13,250 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-08 11:08:14,590 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-08 11:08:14,596 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-08 11:08:14,619 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-08 11:08:14,707 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-08 11:14:05,926 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-08 11:14:07,093 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-08 11:14:07,094 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-08 11:14:07,143 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-08 11:14:07,191 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-08 11:15:14,739 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench clear-cache
+2025-07-08 11:15:16,154 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench clear-website-cache
+2025-07-08 11:15:17,508 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-08 11:15:46,143 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-08 11:15:47,759 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-08 11:15:47,795 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-08 11:15:47,806 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-08 11:15:47,806 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-08 11:16:00,426 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-08 11:16:02,298 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-website-cache
+2025-07-08 11:16:03,923 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local restart
+2025-07-08 11:16:03,929 WARNING /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local restart executed with exit code 2
+2025-07-08 11:16:29,193 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-08 11:16:37,424 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-website-cache
+2025-07-08 11:16:45,444 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local restart
+2025-07-08 11:16:45,448 WARNING /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local restart executed with exit code 2
+2025-07-08 11:16:54,438 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-08 11:16:55,502 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-08 11:16:55,676 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-08 11:16:55,687 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-08 11:16:55,698 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-08 11:18:32,909 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-08 11:18:34,575 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-website-cache
+2025-07-08 11:18:39,725 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start --no-scheduler --no-watch
+2025-07-08 11:18:39,734 WARNING /Users/amee/.pyenv/versions/3.11.9/bin/bench start --no-scheduler --no-watch executed with exit code 2
+2025-07-08 11:19:22,090 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local serve
+2025-07-08 11:20:33,534 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-08 11:20:34,708 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-08 11:20:34,713 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-08 11:20:34,742 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-08 11:20:34,804 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-08 11:21:14,161 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-08 11:26:14,362 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-08 11:26:15,587 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-08 11:26:15,669 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-08 11:26:15,679 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-08 11:26:15,755 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-08 12:00:01,750 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-08 18:00:07,467 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-09 11:39:48,557 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-09 11:39:49,804 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-09 11:39:49,811 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-09 11:39:49,834 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-09 11:39:49,901 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-09 11:58:22,742 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local set-config developer_mode 1
+2025-07-09 11:58:25,096 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-09 12:00:01,876 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-09 12:51:46,099 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local install-app erpnext_shopify
+2025-07-09 13:00:21,155 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench get-app https://github.com/frappe/erpnext_shopify.git
+2025-07-09 13:00:21,198 LOG Getting erpnext_shopify
+2025-07-09 13:00:21,199 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext_shopify.git  --depth 1 --origin upstream
+2025-07-09 13:00:22,974 LOG Installing erpnext_shopify
+2025-07-09 13:00:22,975 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/amee/erpnext-bench/apps/erpnext_shopify 
+2025-07-09 13:00:27,998 DEBUG bench build --app erpnext_shopify
+2025-07-09 13:00:28,283 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build --app erpnext_shopify
+2025-07-09 13:00:50,599 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local install-app erpnext_shopify
+2025-07-09 13:05:35,027 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-09 13:05:36,351 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-09 13:05:36,359 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-09 13:05:36,364 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-09 13:05:36,433 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-09 13:06:11,181 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-09 13:06:12,361 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-09 13:06:12,375 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-09 13:06:12,387 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-09 13:06:12,389 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-09 13:08:27,644 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local uninstall-app erpnext_shopify
+2025-07-09 13:08:47,941 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench remove-app erpnext_shopify
+2025-07-09 13:08:47,949 WARNING /Users/amee/.pyenv/versions/3.11.9/bin/bench remove-app erpnext_shopify executed with exit code 1
+2025-07-09 13:08:55,655 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench migrate
+2025-07-09 13:09:07,917 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-09 13:09:09,101 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-09 13:09:09,122 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-09 13:09:09,126 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-09 13:09:09,143 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-09 13:12:52,840 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench clear-cache
+2025-07-09 13:12:54,087 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench clear-website-cache
+2025-07-09 13:14:06,669 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench clear-cache
+2025-07-09 13:14:07,937 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench clear-website-cache
+2025-07-09 13:14:14,197 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-09 13:14:15,476 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-09 13:14:15,476 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-09 13:14:15,477 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-09 13:14:15,506 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-09 13:17:03,729 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench get-app payments_processor https://github.com/resilient-tech/payments-processor.git
+2025-07-09 13:17:03,781 LOG Getting payments-processor
+2025-07-09 13:17:03,782 DEBUG cd ./apps && git clone https://github.com/resilient-tech/payments-processor.git  --depth 1 --origin upstream
+2025-07-09 13:17:05,130 LOG Installing payments_processor
+2025-07-09 13:17:05,131 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/amee/erpnext-bench/apps/payments_processor 
+2025-07-09 13:17:10,084 DEBUG bench build --app payments_processor
+2025-07-09 13:17:10,431 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build --app payments_processor
+2025-07-09 13:17:21,497 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local install-app payments_processor
+2025-07-09 13:17:45,574 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 13:18:46,540 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-09 13:18:47,869 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-09 13:18:47,880 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-09 13:18:47,914 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-09 13:18:47,945 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-09 13:19:20,986 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 13:25:30,576 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench console
+2025-07-09 13:25:50,447 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local console
+2025-07-09 13:29:20,764 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 13:29:48,540 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-09 13:29:51,332 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local build
+2025-07-09 13:30:43,572 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-09 13:30:44,893 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-09 13:30:44,904 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-09 13:30:44,935 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-09 13:30:44,961 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-09 13:32:39,489 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 13:33:10,828 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-09 13:33:14,002 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local build
+2025-07-09 13:33:59,384 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-09 13:40:38,094 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 13:40:50,365 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-09 13:40:53,661 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local build
+2025-07-09 13:41:46,786 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-09 13:45:34,694 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local console
+2025-07-09 13:45:59,784 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-09 13:46:05,355 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 13:46:14,143 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local build
+2025-07-09 13:46:54,472 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-09 14:34:56,736 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 14:36:15,158 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-09 14:36:21,090 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 15:18:52,571 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-09 15:19:00,875 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 15:19:13,313 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local build
+2025-07-09 15:20:06,120 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-09 15:20:45,253 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-09 15:20:53,453 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 15:21:05,957 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-09 15:21:50,179 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench console
+2025-07-09 15:21:55,592 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-09 15:24:34,982 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-09 15:24:39,412 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 15:24:42,507 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-09 15:25:27,732 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-09 15:27:58,928 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-09 15:28:03,166 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 15:28:05,723 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-09 15:28:53,590 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-09 15:30:51,620 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-09 15:30:55,734 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 15:30:58,664 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-09 15:31:01,939 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-09 15:32:45,099 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-09 15:35:44,290 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench console
+2025-07-09 15:36:44,948 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local console
+2025-07-09 15:41:59,019 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-09 15:42:01,703 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 15:44:27,401 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-09 15:44:30,152 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 15:44:32,327 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-09 15:44:34,633 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-09 15:50:34,610 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-09 15:50:37,634 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 15:50:39,617 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-09 15:50:41,692 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-09 15:51:41,962 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-09 15:51:43,703 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 15:52:13,670 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-09 15:52:56,690 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-09 15:53:24,436 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local console
+2025-07-09 15:56:22,357 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 16:03:18,843 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local list-apps
+2025-07-09 16:17:19,835 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 16:17:54,526 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-09 16:18:05,952 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local console
+2025-07-09 16:30:57,659 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 16:31:28,416 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-09 16:31:31,214 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-website-cache
+2025-07-09 17:49:48,566 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench get-app razorpayx_integration https://github.com/Amey-Golait/razorpayx-integration.git
+2025-07-09 17:49:48,636 LOG Getting razorpayx-integration
+2025-07-09 17:49:48,636 DEBUG cd ./apps && git clone https://github.com/Amey-Golait/razorpayx-integration.git  --depth 1 --origin upstream
+2025-07-09 17:49:50,060 LOG Installing razorpayx_integration
+2025-07-09 17:49:50,061 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/amee/erpnext-bench/apps/razorpayx_integration 
+2025-07-09 17:49:56,312 DEBUG bench build --app razorpayx_integration
+2025-07-09 17:49:56,782 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build --app razorpayx_integration
+2025-07-09 17:50:06,602 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local install-app razorpayx_integration
+2025-07-09 17:53:09,774 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench get-app payment_integration_utils https://github.com/Amey-Golait/payment_integration_utils.git
+2025-07-09 17:53:09,882 LOG Getting payment_integration_utils
+2025-07-09 17:53:09,883 DEBUG cd ./apps && git clone https://github.com/Amey-Golait/payment_integration_utils.git  --depth 1 --origin upstream
+2025-07-09 17:53:11,198 LOG Installing payment_integration_utils
+2025-07-09 17:53:11,200 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/amee/erpnext-bench/apps/payment_integration_utils 
+2025-07-09 17:53:15,769 DEBUG bench build --app payment_integration_utils
+2025-07-09 17:53:16,187 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build --app payment_integration_utils
+2025-07-09 17:53:27,217 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local install-app payment_integration_utils
+2025-07-09 17:53:54,488 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local install-app razorpayx_integration
+2025-07-09 17:54:06,588 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 17:54:08,101 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-09 17:54:16,262 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-09 17:54:17,751 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-09 17:54:17,761 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-09 17:54:17,777 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-09 17:54:17,792 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-09 17:54:23,252 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-09 17:55:09,125 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-09 18:00:02,454 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-10 11:07:46,384 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-10 11:07:47,753 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-10 11:07:47,766 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-10 11:07:47,929 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-10 11:07:47,960 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-10 11:11:18,948 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-10 11:11:20,237 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-10 11:11:20,253 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-10 11:11:20,259 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-10 11:11:20,269 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-10 11:55:36,335 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-10 12:00:02,426 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-10 12:41:07,537 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local reload-doc clinic_app doctype clinic_appointment
+2025-07-10 12:41:17,169 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-10 12:41:20,998 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-website-cache
+2025-07-10 12:46:55,207 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-10 12:49:20,487 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench clear-cache
+2025-07-10 12:49:23,167 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart # if needed
+2025-07-10 12:49:23,210 WARNING /Users/amee/.pyenv/versions/3.11.9/bin/bench restart # if needed executed with exit code 2
+2025-07-10 13:03:10,127 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench clear-cache
+2025-07-10 13:03:12,504 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-10 13:06:08,935 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-10 13:06:12,868 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-10 13:06:15,511 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-10 13:06:17,643 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-10 13:33:16,842 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-10 13:33:20,292 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-10 13:33:33,219 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench console
+2025-07-10 13:33:47,307 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local console
+2025-07-10 13:40:05,350 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-10 13:40:08,936 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-10 13:44:35,029 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-10 13:44:38,383 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-10 13:45:55,539 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local console
+2025-07-10 15:29:43,996 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-10 15:29:46,267 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-10 15:31:24,295 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-10 15:31:26,933 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-10 15:53:34,287 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-10 15:53:38,000 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-10 16:08:37,992 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-10 16:08:41,596 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-10 16:09:36,042 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-10 16:09:39,396 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-10 16:40:07,473 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-10 16:40:11,438 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-11 12:00:01,616 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-11 13:44:36,648 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-11 13:44:42,640 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-11 13:44:43,346 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-11 13:44:43,505 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-11 13:44:43,632 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-11 18:00:04,229 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-12 12:00:03,265 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-12 12:34:08,072 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-12 12:34:09,638 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-12 12:34:09,666 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-12 12:34:09,668 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-12 12:34:09,670 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-12 12:39:32,928 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-12 12:39:34,410 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-12 12:39:34,411 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-12 12:39:34,421 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-12 12:39:34,439 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-12 12:44:31,746 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-12 12:44:33,164 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-12 12:44:33,174 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-12 12:44:33,208 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-12 12:44:33,225 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-12 12:45:29,883 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-12 12:45:33,022 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-12 12:45:33,146 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-12 12:45:33,166 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-12 12:45:33,180 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-12 12:48:47,900 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-12 12:48:49,190 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-12 12:48:49,234 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-12 12:48:49,241 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-12 12:48:49,261 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-12 12:51:04,782 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench setup requirements
+2025-07-12 12:51:04,799 DEBUG /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-07-12 12:51:10,153 LOG Installing frappe
+2025-07-12 12:51:10,156 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/amee/erpnext-bench/apps/frappe 
+2025-07-12 12:51:14,607 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade coverage~=6.5.0 Faker~=18.10.1 pyngrok~=6.0.0 unittest-xml-reporting~=3.2.0 watchdog~=3.0.0 hypothesis~=6.77.0 responses==0.23.1 freezegun~=1.2.2 
+2025-07-12 12:51:29,226 DEBUG cd /Users/amee/erpnext-bench/apps/frappe && yarn install --check-files
+2025-07-12 12:51:32,668 LOG Installing payment_integration_utils
+2025-07-12 12:51:32,670 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/amee/erpnext-bench/apps/payment_integration_utils 
+2025-07-12 12:51:37,435 LOG Installing payments_processor
+2025-07-12 12:51:37,436 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/amee/erpnext-bench/apps/payments_processor 
+2025-07-12 12:51:40,839 LOG Installing erpnext
+2025-07-12 12:51:40,840 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/amee/erpnext-bench/apps/erpnext 
+2025-07-12 12:51:43,810 DEBUG cd /Users/amee/erpnext-bench/apps/erpnext && yarn install --check-files
+2025-07-12 12:51:44,220 LOG Installing student_master
+2025-07-12 12:51:44,220 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/amee/erpnext-bench/apps/student_master 
+2025-07-12 12:51:47,122 LOG Installing clinic_app
+2025-07-12 12:51:47,123 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/amee/erpnext-bench/apps/clinic_app 
+2025-07-12 12:51:50,073 LOG Installing razorpayx_integration
+2025-07-12 12:51:50,074 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/amee/erpnext-bench/apps/razorpayx_integration 
+2025-07-12 12:51:54,002 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-12 12:52:31,530 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-12 12:52:32,876 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-12 12:52:32,885 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-12 12:52:32,886 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-12 12:52:32,897 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-12 15:13:09,775 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-12 15:13:13,116 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-12 15:13:13,155 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-12 15:13:13,198 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-12 15:13:13,320 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-12 18:00:02,140 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-13 12:00:02,224 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-14 11:48:41,162 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-14 11:48:42,618 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 5200
+2025-07-14 11:48:42,675 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-14 11:48:42,718 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-14 11:48:42,777 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-14 11:57:33,548 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-14 11:57:35,657 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000 --hostname erp.amey.local
+2025-07-14 11:57:35,703 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-14 11:57:35,853 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-14 11:57:35,908 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-14 11:58:40,153 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-14 11:58:41,825 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-14 11:58:41,835 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000 --hostname erp.amey.local
+2025-07-14 11:58:41,859 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-14 11:58:41,862 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-14 12:03:20,288 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-14 12:03:21,989 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-14 12:03:22,153 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-14 12:03:22,156 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-14 12:03:22,158 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-14 13:00:31,798 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-14 13:00:37,189 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-14 13:00:37,357 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-14 13:00:37,436 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-14 13:00:37,615 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-15 12:49:38,564 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-15 12:49:43,282 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-15 12:49:43,491 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-15 12:49:43,525 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-15 12:49:43,766 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-15 12:55:28,284 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench new-site myerpnextsite.local --no-mariadb-socket --db-host sql12.freesqldatabase.com --db-port 3306 --db-name sql12790072 --mariadb-root-username sql12790072 --mariadb-root-password DHqmEDndjN
+2025-07-15 13:02:39,723 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench list-sites
+2025-07-15 13:31:09,146 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench new-site site1.local --admin-password admin123 --mariadb-root-password root123
+2025-07-15 13:31:56,565 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench init MyERPNext --frappe-branch version-15
+2025-07-15 13:31:56,716 DEBUG cd MyERPNext && python3 -m venv env
+2025-07-15 13:32:05,373 DEBUG cd MyERPNext && /Users/amee/MyERPNext/MyERPNext/env/bin/python -m pip install --quiet --upgrade pip
+2025-07-15 13:32:10,744 DEBUG cd MyERPNext && /Users/amee/MyERPNext/MyERPNext/env/bin/python -m pip install --quiet wheel
+2025-07-15 13:32:13,116 LOG Getting frappe
+2025-07-15 13:32:13,117 DEBUG cd MyERPNext/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2025-07-15 13:32:29,003 LOG Installing frappe
+2025-07-15 13:32:29,008 DEBUG cd /Users/amee/MyERPNext/MyERPNext && /Users/amee/MyERPNext/MyERPNext/env/bin/python -m pip install --quiet --upgrade -e /Users/amee/MyERPNext/MyERPNext/apps/frappe 
+2025-07-15 13:33:48,520 DEBUG cd /Users/amee/MyERPNext/MyERPNext/apps/frappe && yarn install --check-files
+2025-07-15 13:34:20,104 DEBUG cd MyERPNext && bench build
+2025-07-15 13:34:29,248 WARNING /Users/amee/.pyenv/versions/3.11.9/bin/bench init MyERPNext --frappe-branch version-15 executed with exit code 1
+2025-07-15 13:35:52,643 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench new-site site1.local --admin-password admin123 --mariadb-root-password root123
+2025-07-15 13:39:09,339 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench new-site site1.local --admin-password admin123 --mariadb-root-password root123
+2025-07-15 14:02:34,595 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench new-site site1.local --admin-password admin123 --mariadb-root-password root123
+2025-07-15 15:08:39,749 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site site1.local migrate
+2025-07-15 15:08:40,357 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-15 15:09:48,736 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site site1.local migrate
+2025-07-15 15:09:50,026 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-15 15:09:53,666 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-15 15:09:54,089 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-15 15:09:54,143 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-15 15:10:33,217 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site site1.local migrate
+2025-07-15 15:10:34,054 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-15 15:10:36,734 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-15 15:10:36,796 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-15 15:10:36,839 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-15 15:10:36,947 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-15 15:11:18,022 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site site1.local migrate
+2025-07-15 15:11:18,311 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-15 15:11:19,886 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-15 15:11:19,888 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-15 15:11:19,909 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-15 15:11:19,917 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-15 15:13:30,945 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --version
+2025-07-15 15:13:35,893 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site site1.local migrate
+2025-07-15 15:15:37,037 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site site1.local migrate
+2025-07-15 15:20:39,019 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench setup requirements
+2025-07-15 15:20:39,045 DEBUG /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-07-15 15:20:39,048 WARNING /Users/amee/.pyenv/versions/3.11.9/bin/bench setup requirements executed with exit code 1
+2025-07-15 15:20:40,672 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench setup env
+2025-07-15 15:20:40,795 DEBUG python3 -m venv env
+2025-07-15 15:20:58,196 DEBUG /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-07-15 15:21:07,920 DEBUG /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet wheel
+2025-07-15 15:21:09,978 DEBUG /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade -e ./apps/frappe
+2025-07-15 15:22:58,780 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench setup requirements --dev
+2025-07-15 15:23:00,320 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade coverage~=6.5.0 Faker~=18.10.1 pyngrok~=6.0.0 unittest-xml-reporting~=3.2.0 watchdog~=3.0.0 hypothesis~=6.77.0 responses==0.23.1 freezegun~=1.2.2 
+2025-07-15 15:23:16,543 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench update --reset
+2025-07-15 15:23:16,612 WARNING /Users/amee/.pyenv/versions/3.11.9/bin/bench update --reset executed with exit code 1
+2025-07-15 15:27:58,046 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-15 15:28:01,153 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-15 15:28:01,293 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-15 15:28:01,389 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-15 15:28:01,426 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-15 15:29:17,206 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site site1.local migrate
+2025-07-15 15:30:55,123 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench setup requirements --dev
+2025-07-15 15:30:56,918 DEBUG cd /Users/amee/erpnext-bench && /Users/amee/erpnext-bench/env/bin/python -m pip install --quiet --upgrade coverage~=6.5.0 Faker~=18.10.1 pyngrok~=6.0.0 unittest-xml-reporting~=3.2.0 watchdog~=3.0.0 hypothesis~=6.77.0 responses==0.23.1 freezegun~=1.2.2 
+2025-07-15 15:31:19,343 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site site1.local migrate
+2025-07-15 15:36:21,695 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site site1.local migrate
+2025-07-15 15:36:40,210 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-15 15:36:59,385 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-15 15:37:02,536 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-15 15:37:02,620 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-15 15:37:02,624 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-15 15:37:02,666 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-15 15:37:24,072 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-15 15:44:24,495 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-15 15:45:30,181 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-15 16:32:50,403 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-15 16:35:38,649 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-15 16:43:36,632 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-15 16:43:38,982 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-15 16:43:39,039 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-15 16:43:39,047 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-15 16:43:39,173 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-15 16:57:37,368 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-15 16:58:24,551 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local build
+2025-07-15 16:59:22,348 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-15 16:59:25,421 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-15 17:05:56,908 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-15 17:06:15,357 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local build
+2025-07-15 17:06:59,304 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-15 17:07:02,392 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-15 17:08:24,166 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-15 17:09:23,003 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-15 17:09:26,062 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-15 17:10:43,727 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-15 18:00:02,194 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-15 18:35:53,508 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site your_site_name migrate
+2025-07-15 18:35:57,773 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench clear-cache
+2025-07-15 18:36:09,822 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-15 18:37:07,962 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-15 18:37:53,350 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench clear-cache
+2025-07-15 18:45:33,728 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-15 18:46:07,709 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-15 18:50:17,694 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-15 18:50:54,815 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-15 18:56:23,369 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-15 18:56:45,138 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-15 18:56:50,537 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-15 18:57:25,825 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-16 10:50:53,435 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-16 10:50:55,329 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-16 10:50:55,338 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-16 10:50:55,356 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-16 10:50:55,387 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-16 11:47:34,981 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 11:51:12,806 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 11:54:58,431 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 11:56:19,455 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-16 11:59:23,047 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-16 12:00:02,252 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-16 12:00:04,062 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 12:03:09,124 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local console
+2025-07-16 12:05:43,719 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local console
+2025-07-16 12:07:05,655 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local console
+2025-07-16 12:07:20,030 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-16 12:08:00,187 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 12:18:19,527 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 13:27:49,165 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 13:29:48,939 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-16 13:30:36,382 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 13:30:39,274 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-16 13:36:53,352 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-16 13:37:39,927 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 13:37:40,797 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-16 13:42:56,962 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 13:45:31,544 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 15:18:11,209 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local console
+2025-07-16 15:21:50,465 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 15:23:14,172 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 15:29:00,005 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-16 15:29:04,010 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-16 15:29:46,338 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 15:34:17,664 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-16 15:34:21,177 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-16 15:35:08,977 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 15:48:06,959 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local console
+2025-07-16 15:48:59,392 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local mariadb
+2025-07-16 15:49:24,624 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-16 15:49:27,476 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-16 15:51:15,370 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local mariadb
+2025-07-16 15:51:51,857 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-16 15:51:55,560 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-16 15:54:30,415 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-16 15:54:35,042 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-16 15:58:23,265 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local mariadb
+2025-07-16 15:58:33,339 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-16 15:58:36,435 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-website-cache
+2025-07-16 15:58:38,562 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 15:59:18,809 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local mariadb
+2025-07-16 15:59:25,881 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-16 15:59:28,742 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-website-cache
+2025-07-16 15:59:30,431 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 16:03:37,276 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-16 16:03:40,928 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-16 16:04:26,512 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 16:06:00,582 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-16 16:06:04,570 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-16 16:06:37,891 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 16:08:02,992 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local mariadb
+2025-07-16 16:08:18,555 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-16 16:08:20,659 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-website-cache
+2025-07-16 16:08:22,058 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 17:17:27,666 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-16 17:17:31,049 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-16 17:18:09,516 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 17:19:39,254 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-16 17:19:43,478 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-16 17:20:15,199 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 17:28:56,394 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-16 17:28:59,961 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-16 17:29:34,548 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 17:34:33,807 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-16 17:34:36,224 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-16 17:35:08,835 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 17:37:37,917 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-16 17:37:41,098 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local migrate
+2025-07-16 17:38:22,030 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 18:24:12,701 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench execute frappe.core.doctype.report.report.create_report --kwargs {'report_name': 'Subject Wise Marksheet', 'doctype': 'Exam', 'report_type': 'Script Report', 'is_standard': 0}
+2025-07-16 18:30:27,978 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 18:42:55,526 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 18:45:17,345 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 18:48:49,700 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 18:54:00,231 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 18:56:59,384 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 18:58:31,500 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 19:01:15,423 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-16 19:04:31,071 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-17 10:58:41,155 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-17 10:58:42,991 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-17 10:58:43,051 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-17 10:58:43,053 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-17 10:58:43,059 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-17 11:04:58,404 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-17 11:05:43,298 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-17 11:15:29,625 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-17 11:15:37,173 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-17 11:15:37,587 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-17 11:15:38,031 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-17 11:15:38,050 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-17 11:30:35,989 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-17 11:35:24,028 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-17 12:00:02,627 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-17 12:30:10,225 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local make-page Student Dashboard --app student_master
+2025-07-17 12:36:11,593 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-17 12:37:13,013 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-17 12:37:19,259 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-17 12:37:56,221 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-17 12:51:23,771 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-17 12:52:04,733 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-17 12:58:43,204 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-17 12:59:21,783 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-17 13:01:18,910 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-17 13:02:10,468 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-17 13:06:27,365 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-17 13:08:40,455 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-17 13:15:31,483 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-17 13:20:43,129 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-17 13:20:46,230 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local build
+2025-07-17 13:21:29,965 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-17 15:17:40,549 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-17 18:00:01,992 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-18 10:32:52,305 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-18 10:32:54,046 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-18 10:32:54,139 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-18 10:32:54,171 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-18 10:32:54,182 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-18 12:00:01,971 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-18 12:53:43,446 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local clear-cache
+2025-07-18 12:53:46,962 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local build
+2025-07-18 12:54:32,794 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-18 13:10:25,842 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-18 13:11:06,569 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-18 15:16:06,447 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench --site erp.amey.local new-page student-master-home --module student_master
+2025-07-18 15:19:19,701 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-18 15:20:09,300 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-18 15:21:17,804 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-18 15:22:05,160 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-18 15:24:22,351 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-18 15:25:47,494 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-18 15:26:34,673 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-18 15:28:35,187 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-18 15:29:14,876 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-18 15:35:58,838 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-18 15:36:40,059 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-18 15:44:28,178 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-18 15:45:11,343 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-18 15:48:43,768 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-18 15:49:22,474 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-18 15:52:38,824 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-18 15:53:20,009 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-18 16:00:54,898 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench build
+2025-07-18 16:01:37,556 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench restart
+2025-07-18 18:48:30,305 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-18 18:48:32,632 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-18 18:48:32,679 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-18 18:48:32,702 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-18 18:48:32,814 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-18 19:07:51,194 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-18 19:08:20,776 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-18 19:08:22,883 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-18 19:08:22,899 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-18 19:08:22,935 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-18 19:08:23,118 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-19 12:00:02,395 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-19 12:04:05,641 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-19 12:05:11,273 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-19 12:05:13,528 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-19 12:05:13,531 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-19 12:05:13,597 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-19 12:05:13,638 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-19 12:05:45,496 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-19 12:05:47,370 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-19 12:05:47,478 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-19 12:05:47,492 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-19 12:05:47,501 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-20 00:00:14,270 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-21 11:19:35,125 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-21 11:19:37,031 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-21 11:19:37,101 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-21 11:19:37,112 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-21 11:19:37,136 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-21 12:00:02,483 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-21 18:00:02,230 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-22 00:00:02,862 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-22 12:00:01,442 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-22 12:12:00,410 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-22 12:12:03,278 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-22 12:12:03,330 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-22 12:12:03,339 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-22 12:12:03,404 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-22 18:00:13,547 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-23 10:54:34,717 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-23 10:54:36,492 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-23 10:54:36,558 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-23 10:54:36,602 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-23 10:54:36,622 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-23 12:00:01,598 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-23 15:31:45,776 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-23 15:31:47,592 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-23 15:31:47,592 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-23 15:31:47,619 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-23 15:31:47,681 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-23 18:01:08,589 INFO /Users/amee/Library/Python/3.9/bin/bench --verbose --site all backup
+2025-07-23 18:16:54,181 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-23 18:16:55,709 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-23 18:16:55,784 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-23 18:16:55,797 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-23 18:16:55,817 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule
+2025-07-23 18:54:03,238 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench start
+2025-07-23 18:54:05,045 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench serve --port 8000
+2025-07-23 18:54:05,060 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench watch
+2025-07-23 18:54:05,063 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench worker
+2025-07-23 18:54:05,122 INFO /Users/amee/.pyenv/versions/3.11.9/bin/bench schedule

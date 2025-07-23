@@ -1,0 +1,71 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "15.72.5"
+    },
+    "erpnext": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "f087da927aba08542e319ea9a76797cf5bd25b7b",
+            "branch": "version-15"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "15.67.0"
+    },
+    "clinic_app": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "0aacbeb2372539ff200f355b60f19f5ea40c28b6",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 3,
+        "version": "0.0.1"
+    },
+    "student_master": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "16df972066b755e55d03c7492880ac245a58878c",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 4,
+        "version": "0.0.1"
+    },
+    "payments_processor": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "7722e55af9d4d52348d68c14c194ab37966a2e07",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 5,
+        "version": "16.0.0-dev"
+    },
+    "razorpayx_integration": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "661dd51f5b4938b3f03d28ebace0bc297e18ee50",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 6,
+        "version": "16.0.0-dev"
+    },
+    "payment_integration_utils": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "6c3473e4dda775b53618ac5de45ec0fec4729b3a",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 7,
+        "version": "16.0.0-dev"
+    }
+}

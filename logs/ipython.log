@@ -1,0 +1,154 @@
+2025-07-04 13:21:11,288 INFO ipython === bench console session ===
+2025-07-04 13:21:11,289 INFO ipython frappe.get_all("Page", filters={"name": "doctor-prescription"})
+2025-07-04 13:21:11,290 INFO ipython === session end ===
+2025-07-04 13:27:18,670 INFO ipython === bench console session ===
+2025-07-04 13:27:18,673 INFO ipython frappe.get_all("Page", filters={"name": "doctor-prescription"})
+2025-07-04 13:27:18,674 INFO ipython import json
+with open('apps/clinic_app/clinic_app/config/pages/doctor_prescription.json') as f:
+    doc = json.load(f)
+    if not frappe.db.exists("Page", doc["name"]):
+        frappe.get_doc(doc).insert(ignore_permissions=True)
+        frappe.db.commit()
+2025-07-04 13:27:18,674 INFO ipython import json
+with open('/Users/amee/erpnext-bench/apps/clinic_app/clinic_app/config/pages/doctor_prescription.json') as f:
+    doc = json.load(f)
+    if not frappe.db.exists("Page", doc["name"]):
+        frappe.get_doc(doc).insert(ignore_permissions=True)
+        frappe.db.commit()
+2025-07-04 13:27:18,675 INFO ipython import json
+with open('/Users/amee/erpnext-bench/apps/clinic_app/clinic_app/config/pages/doctor_prescription.json') as f:
+    doc = json.load(f)
+    if not frappe.db.exists("Page", doc["name"]):
+        frappe.get_doc(doc).insert(ignore_permissions=True)
+        frappe.db.commit()
+2025-07-04 13:27:18,675 INFO ipython import json
+with open('/Users/amee/erpnext-bench/apps/clinic_app/clinic_app/config/pages/doctor_prescription.json') as f:
+    doc = json.load(f)
+    if not frappe.db.exists("Page", doc["name"]):
+        frappe.get_doc(doc).insert(ignore_permissions=True)
+        frappe.db.commit()
+2025-07-04 13:27:18,675 INFO ipython === session end ===
+2025-07-04 13:39:31,244 INFO ipython === bench console session ===
+2025-07-04 13:39:31,248 INFO ipython frappe.get_all("Page", filters={"name": "doctor-prescription"})
+2025-07-04 13:39:31,248 INFO ipython frappe.get_all("Page", filters={"name": "doctor-prescription"})
+2025-07-04 13:39:31,248 INFO ipython === session end ===
+2025-07-04 15:18:54,193 INFO ipython === bench console session ===
+2025-07-04 15:18:54,196 INFO ipython frappe.pages['doctor-prescription']
+2025-07-04 15:18:54,197 INFO ipython === session end ===
+2025-07-04 15:29:26,531 INFO ipython === bench console session ===
+2025-07-04 15:29:26,534 INFO ipython frappe.get_doc("Page", "doctor-prescription").as_dict()
+2025-07-04 15:29:26,535 INFO ipython === session end ===
+2025-07-04 22:13:56,303 INFO ipython === bench console session ===
+2025-07-04 22:13:56,306 INFO ipython from datetime import datetime, timedelta
+
+# Sample test input
+appointment_date = "2025-07-08"
+appointment_time = "10:00:00"
+
+# Combine date and time strings into a datetime object
+start = datetime.strptime(f"{appointment_date} {appointment_time}", "%Y-%m-%d %H:%M:%S")
+
+# Add 30 minutes
+end = start + timedelta(minutes=30)
+
+# Print the result
+print("Calculated end time:", end.time())
+2025-07-04 22:13:56,307 INFO ipython === session end ===
+2025-07-05 11:35:11,086 INFO ipython === bench console session ===
+2025-07-05 11:35:11,089 INFO ipython frappe.get_doc("DocType", "Clinic Appointment").module
+2025-07-05 11:35:11,089 INFO ipython === session end ===
+2025-07-05 11:36:47,120 INFO ipython === bench console session ===
+2025-07-05 11:36:47,121 INFO ipython frappe.get_doc("DocType", "Clinic Appointment").export_to_files()
+2025-07-05 11:36:47,122 INFO ipython === session end ===
+2025-07-05 11:57:45,376 INFO ipython === bench console session ===
+2025-07-05 11:57:45,378 INFO ipython frappe.db.get_value("Clinic Appointment", "8v8n4k4nmf", "end_time")
+2025-07-05 11:57:45,378 INFO ipython frappe.db.get_value("DocType", "Clinic Appointment", "custom")
+2025-07-05 11:57:45,378 INFO ipython === session end ===
+2025-07-09 13:29:18,190 INFO ipython === bench console session ===
+2025-07-09 13:29:18,193 INFO ipython frappe.get_all("Module Def", filters={"module_name": "Payments Processor"})
+2025-07-09 13:29:18,193 INFO ipython === session end ===
+2025-07-09 13:45:49,618 INFO ipython === bench console session ===
+2025-07-09 13:45:49,620 INFO ipython import payments_processor
+print(payments_processor.__file__)
+2025-07-09 13:45:49,621 INFO ipython === session end ===
+2025-07-09 15:38:25,450 INFO ipython === bench console session ===
+2025-07-09 15:38:25,453 INFO ipython import payments_processor
+print(payments_processor.__file__)
+2025-07-09 15:38:25,454 INFO ipython === session end ===
+2025-07-09 15:56:20,285 INFO ipython === bench console session ===
+2025-07-09 15:56:20,287 INFO ipython import payments_processor
+2025-07-09 15:56:20,288 INFO ipython === session end ===
+2025-07-09 16:30:55,781 INFO ipython === bench console session ===
+2025-07-09 16:30:55,784 INFO ipython frappe.get_all("Module Def", filters={"module_name": "Payments Processor"})
+2025-07-09 16:30:55,784 INFO ipython frappe.get_all("Module Def", filters={"module_name": "Payments Processor"})
+2025-07-09 16:30:55,784 INFO ipython frappe.get_all("DocType", filters={"name": "Payments Processor Configuration"})
+2025-07-09 16:30:55,785 INFO ipython frappe.get_doc("DocType", "Payments Processor Configuration").module
+2025-07-09 16:30:55,785 INFO ipython frappe.get_doc("DocType", "Payments Processor Configuration").module
+2025-07-09 16:30:55,785 INFO ipython bench --site erp.amey.local migrate
+bench --site erp.amey.local clear-cache
+bench --site erp.amey.local clear-website-cache
+exit
+2025-07-09 16:30:55,785 INFO ipython === session end ===
+2025-07-10 13:40:00,052 INFO ipython === bench console session ===
+2025-07-10 13:40:00,054 INFO ipython for appt in frappe.get_all("Clinic Appointment", fields=["name", "doctor", "patient", "appointment_date"]):
+    doc = frappe.get_doc("Clinic Appointment", appt.name)
+    doc.save()
+2025-07-10 13:40:00,054 INFO ipython for appt in frappe.get_all("Clinic Appointment", fields=["name", "doctor", "patient", "appointment_date"]):
+    doc = frappe.get_doc("Clinic Appointment", appt.name)
+    doc.save()
+    
+2025-07-10 13:40:00,058 INFO ipython for appt in frappe.get_all("Clinic Appointment", fields=["name"]):
+    doc = frappe.get_doc("Clinic Appointment", appt.name)
+    doc.save()
+2025-07-10 13:40:00,059 INFO ipython for appt in frappe.get_all("Clinic Appointment", fields=["name"]):
+    doc = frappe.get_doc("Clinic Appointment", appt.name)
+    doc.save()
+    
+2025-07-10 13:40:00,059 INFO ipython for appt in frappe.get_all("Clinic Appointment", fields=["name"]):
+    doc = frappe.get_doc("Clinic Appointment", appt.name)
+    doc.save()
+    
+2025-07-10 13:40:00,059 INFO ipython === session end ===
+2025-07-10 15:29:33,586 INFO ipython === bench console session ===
+2025-07-10 15:29:33,590 INFO ipython frappe.db.get_value("Clinic Appointment", "<appointment_name>", "custom_display")
+2025-07-10 15:29:33,591 INFO ipython frappe.db.get_value("Clinic Appointment", "0p1in37dpv", "custom_display")
+2025-07-10 15:29:33,591 INFO ipython for appt in frappe.get_all("Clinic Appointment", pluck="name"):
+    doc = frappe.get_doc("Clinic Appointment", appt)
+    doc.save()
+2025-07-10 15:29:33,591 INFO ipython === session end ===
+2025-07-16 12:03:28,856 INFO ipython === bench console session ===
+2025-07-16 12:03:28,857 INFO ipython for cls in frappe.get_all("Class", fields=["name", "class_name", "academic_year"]):
+    title = f"{cls.class_name} - {cls.academic_year}"
+    frappe.db.set_value("Class", cls.name, "title", title)
+
+frappe.db.commit()
+2025-07-16 12:03:28,857 INFO ipython === session end ===
+2025-07-16 12:07:02,472 INFO ipython === bench console session ===
+2025-07-16 12:07:02,474 INFO ipython for cls in frappe.get_all("Class", fields=["name", "class_name", "section", "academic_year"]):
+    title = f"{cls.class_name} - {cls.section} - {cls.academic_year}"
+    frappe.db.set_value("Class", cls.name, "title", title)
+
+frappe.db.commit()
+2025-07-16 12:07:02,475 INFO ipython === session end ===
+2025-07-16 12:07:15,362 INFO ipython === bench console session ===
+2025-07-16 12:07:15,362 INFO ipython === session end ===
+2025-07-16 15:21:48,680 INFO ipython === bench console session ===
+2025-07-16 15:21:48,684 INFO ipython frappe.get_all("Class Enrollment", filters={
+    "class_link": "<11th-A - 2025-2026>",
+    "academic_year": "2025-2026"
+})
+2025-07-16 15:21:48,685 INFO ipython frappe.get_all("Class Enrollment", filters={
+    "class_link": "<5m99fk1nj7>",
+    "academic_year": "2025-2026"
+})
+2025-07-16 15:21:48,685 INFO ipython frappe.get_all("Class Enrollment", filters={
+    "class_link": "5m99fk1nj7",  # no < >
+    "academic_year": "2025-2026"
+})
+2025-07-16 15:21:48,685 INFO ipython === session end ===
+2025-07-16 15:48:57,401 INFO ipython === bench console session ===
+2025-07-16 15:48:57,406 INFO ipython frappe.get_all("Class", filters={"status": "Active"})
+2025-07-16 15:48:57,406 INFO ipython UPDATE tabDocField
+SET link_filters = '{"status": "Active"}'
+WHERE parent = 'Class Attendance' AND fieldname = 'class_link';
+2025-07-16 15:48:57,407 INFO ipython === session end ===
