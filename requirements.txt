@@ -1,0 +1,8 @@
+# requirements.txt
+
+# Base Frappe + ERPNext is already in image, so we just include custom app dependencies here
+-e apps/student_master
+-e apps/clinic_app
+-e apps/payments_processor
+-e apps/payment_integration_utils
+-e apps/razorpayx_integration

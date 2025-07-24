@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: erpnext-web
+    env: docker
+    plan: starter
+    region: oregon
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: MYSQL_ROOT_PASSWORD
+        value: amee8386
+      - key: PORT
+        value: "8000"
+      - key: DB_HOST
+        value: sql12.freesqldatabase.com
